@@ -17,7 +17,7 @@ namespace Consola_Gestion_de_un_zoologico
         public override void ClaseDeAnimalEres()
         {
 
-            Console.WriteLine( "Soy un MAMIFERO llamado \n" + nombre + " De la especie:\n" + especie +    " Mi peso es:\n" + peso + " Mi jaula es: " + jaula+"\n");
+            Console.WriteLine( "Soy un MAMIFERO llamado " + nombre+ "\n" + "De la especie:" + especie + "\n" +    "Mi peso es:" + peso+ "\n" + "Mi jaula es: " + jaula+"\n");
         }
 
     }

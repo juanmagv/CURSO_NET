@@ -12,14 +12,15 @@ namespace Consola_Gestion_de_un_zoologico
 
         public Ave(String especie, String nombre, double peso, int jaula,string colorPlumaje,float alturaMaximaVuelo) : base(especie, nombre, peso, jaula)
         {
-
+            this.colorPlumaje = colorPlumaje;
+            this.alturaMaximaVuelo = alturaMaximaVuelo;
         }
 
         public  override void ClaseDeAnimalEres()
         {
 
-            Console.WriteLine( "Soy un AVE llamado \n" + nombre + " De la especie:\n" + especie + " Mi peso es:\n" + peso + " Mi jaula es: " + jaula +
-                "Mi plumaje es: \n" + colorPlumaje + " Mi altura maxima de vuelo es: \n" + alturaMaximaVuelo+"\n");
+            Console.WriteLine( "Soy un AVE llamado " + nombre+ "\n" + "De la especie:" + especie + "\n"+ "Mi peso es:" + peso + "\n" + "Mi jaula es: " + jaula + "\n" +
+                "Mi plumaje es: " + this.colorPlumaje + "\n" + "Mi altura maxima de vuelo es: " + this.alturaMaximaVuelo+"\n");
         }
     }
 }

@@ -10,17 +10,19 @@ namespace Consola_Gestion_de_un_zoologico
     {
         private bool vuela;
         public Insecto(string especie, string nombre, double peso, int jaula,bool vuela) :base(especie, nombre, peso, jaula){
-            }
+            this.vuela = vuela;
+        
+        }
 
 
     public override void ClaseDeAnimalEres()
     {
             if (vuela == true){
-                Console.WriteLine("Soy un INSECTO llamado \n" + nombre + " De la especie:\n" + especie + " Mi peso es:\n" + peso + " Mi jaula es: \n" + jaula + " Y vuelo\n");
+                Console.WriteLine("Soy un INSECTO llamado " + nombre + "\n" + "De la especie:" + especie+ "\n" + "Mi peso es:" + peso+ "\n" + "Mi jaula es: " + jaula+ "\n" + "Y VUELO\n");
             }
             else
             {
-                Console.WriteLine("Soy un INSECTO llamado \n" + nombre + " De la especie:\n" + especie + " Mi peso es:\n" + peso + " Mi jaula es: \n" + jaula + "NO VUELO\n");
+                Console.WriteLine("Soy un INSECTO llamado " + nombre + "\n" + "De la especie:" + especie + "\n" + "Mi peso es:" + peso+ "\n" + "Mi jaula es:" + jaula+ "\n" + "NO VUELO\n");
             }
 
             
