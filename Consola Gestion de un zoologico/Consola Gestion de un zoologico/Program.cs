@@ -13,7 +13,7 @@ namespace Consola_Gestion_de_un_zoologico
 
             Mamifero mam = new Mamifero("paquidermo", "elefante", 8000, 12);
             Insecto ins = new Insecto("no se", "escarabajo pelotero", 1, 2,false);
-            Insecto ins2 = new Insecto("no se", "mariposa", 1, 3, true);
+            Insecto ins2 = new Insecto("no se DOS", "mariposa", 1, 3, true);
             Ave av = new Ave("desconocido", "mirlo", 2, 4, "blanco", 1000);
             mam.ClaseDeAnimalEres();
             ins.ClaseDeAnimalEres();
