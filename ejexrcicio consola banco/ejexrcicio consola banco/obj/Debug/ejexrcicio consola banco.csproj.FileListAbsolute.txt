@@ -1,0 +1,7 @@
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\ejexrcicio consola banco\ejexrcicio consola banco\bin\Debug\ejexrcicio consola banco.exe.config
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\ejexrcicio consola banco\ejexrcicio consola banco\bin\Debug\ejexrcicio consola banco.exe
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\ejexrcicio consola banco\ejexrcicio consola banco\bin\Debug\ejexrcicio consola banco.pdb
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\ejexrcicio consola banco\ejexrcicio consola banco\obj\Debug\ejexrcicio consola banco.csproj.AssemblyReference.cache
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\ejexrcicio consola banco\ejexrcicio consola banco\obj\Debug\ejexrcicio consola banco.csproj.CoreCompileInputs.cache
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\ejexrcicio consola banco\ejexrcicio consola banco\obj\Debug\ejexrcicio consola banco.exe
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\ejexrcicio consola banco\ejexrcicio consola banco\obj\Debug\ejexrcicio consola banco.pdb

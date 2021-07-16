@@ -21,12 +21,12 @@ namespace ejexrcicio_consola_banco
             
             do
             {
-                Console.WriteLine("Crear cuenta");
-                Console.WriteLine("Depositar cantidad");
-                Console.WriteLine("Retirar dinero");
-                Console.WriteLine("Consultar saldo");
-                Console.WriteLine("Salir de la App");
-                Console.WriteLine("introduzaca una opcion");
+                Console.WriteLine("1 Crear cuenta");
+                Console.WriteLine("2 Depositar cantidad");
+                Console.WriteLine("3 Retirar dinero");
+                Console.WriteLine("4 Consultar saldo");
+                Console.WriteLine("5 Salir de la App");
+                Console.WriteLine("introduzaca una opcion\n");
                 opcion = Console.ReadLine();
                 Console.Clear();
 
@@ -46,6 +46,26 @@ namespace ejexrcicio_consola_banco
 
 
                     case "2":
+                        Console.WriteLine("introduce el importe del deposito");
+                        deposito = int.Parse(Console.ReadLine());
+                        cuen.depositar(deposito);
+                        break;
+
+
+                    case "3":
+                          Console.WriteLine("introduce cantidad a retirar");
+                        retiro = int.Parse(Console.ReadLine());
+                        cuen.retirar(retiro);
+                        break;
+
+                    case "4":
+
+                        Console.WriteLine("El saldo es " + cuen.Psaldo);
+                        break;
+                    case "5":
+                        Console.WriteLine("Saliendo");
+                        Console.ReadLine();
+                        break;
                 }
 
             } while (opcion != "5");

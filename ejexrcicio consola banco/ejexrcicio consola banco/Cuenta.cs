@@ -42,7 +42,15 @@ namespace ejexrcicio_consola_banco
         }
         public void retirar(int retiro)
         {
-            this.saldo = this.saldo -retiro;
+            if (saldo < retiro)
+            {
+                Console.WriteLine("No hay saldo suficiente\n");
+            }
+            else
+            {
+                this.saldo = this.saldo - retiro;
+            }
+            
         }
 
 
