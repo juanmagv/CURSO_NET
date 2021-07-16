@@ -37,10 +37,11 @@ namespace ejexrcicio_consola_banco
 
                         Console.WriteLine("Introduce el numero de cuenta");
                         cuen.PnumCuenta = int.Parse(Console.ReadLine());
-                        Console.WriteLine("Introduce el numero de cliente");
+                        Console.WriteLine("Introduce el nombre de cliente");
                         cuen.PnumCliente = Console.ReadLine();
                         Console.WriteLine("introduzca el saldo");
                         cuen.Psaldo = double.Parse(Console.ReadLine());
+                        Console.Clear();
                         break;
 
 
@@ -49,6 +50,7 @@ namespace ejexrcicio_consola_banco
                         Console.WriteLine("introduce el importe del deposito");
                         deposito = int.Parse(Console.ReadLine());
                         cuen.depositar(deposito);
+                        Console.Clear();
                         break;
 
 
@@ -56,6 +58,7 @@ namespace ejexrcicio_consola_banco
                           Console.WriteLine("introduce cantidad a retirar");
                         retiro = int.Parse(Console.ReadLine());
                         cuen.retirar(retiro);
+                        Console.Clear();
                         break;
 
                     case "4":
@@ -65,6 +68,7 @@ namespace ejexrcicio_consola_banco
                     case "5":
                         Console.WriteLine("Saliendo");
                         Console.ReadLine();
+                        Console.Clear();
                         break;
                 }
 

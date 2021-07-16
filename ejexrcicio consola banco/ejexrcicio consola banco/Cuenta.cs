@@ -33,7 +33,7 @@ namespace ejexrcicio_consola_banco
         }
         public void consultaDatos()
         {
-            Console.WriteLine("Numero de cuenta: " + this.PnumCuenta + "\n Numero de cliente: " + this.PnumCliente + "\n saldo: " + this.Psaldo);
+            Console.WriteLine("Numero de cuenta: " + this.PnumCuenta + "\n Nombre de cliente: " + this.PnumCliente + "\n saldo: " + this.Psaldo);
         }
 
         public void depositar(int deposito)
