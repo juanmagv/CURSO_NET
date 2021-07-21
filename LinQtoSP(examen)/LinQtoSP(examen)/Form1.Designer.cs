@@ -120,6 +120,7 @@ namespace LinQtoSP_examen_
             this.BtnNuevo.TabIndex = 8;
             this.BtnNuevo.Text = "Nuevo";
             this.BtnNuevo.UseVisualStyleBackColor = true;
+            this.BtnNuevo.Click += new System.EventHandler(this.BtnNuevo_Click);
             // 
             // BtnGuardar
             // 
@@ -129,6 +130,7 @@ namespace LinQtoSP_examen_
             this.BtnGuardar.TabIndex = 9;
             this.BtnGuardar.Text = "Guardar";
             this.BtnGuardar.UseVisualStyleBackColor = true;
+            this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
             // 
             // BtnActualizar
             // 
@@ -138,6 +140,7 @@ namespace LinQtoSP_examen_
             this.BtnActualizar.TabIndex = 10;
             this.BtnActualizar.Text = "Actualizar";
             this.BtnActualizar.UseVisualStyleBackColor = true;
+            this.BtnActualizar.Click += new System.EventHandler(this.BtnActualizar_Click);
             // 
             // BtnEliminar
             // 
@@ -147,6 +150,7 @@ namespace LinQtoSP_examen_
             this.BtnEliminar.TabIndex = 11;
             this.BtnEliminar.Text = "Eliminar";
             this.BtnEliminar.UseVisualStyleBackColor = true;
+            this.BtnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
             // 
             // TxtBuscar
             // 
