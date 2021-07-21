@@ -16,7 +16,7 @@ namespace LinQtoSP_examen_
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GridDatos());
+            Application.Run(new GridD());
         }
     }
 }

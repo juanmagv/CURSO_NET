@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LinQtoSP_examen_
 {
-    public partial class GridDatos : Form
+    public partial class GridD : Form
     {
-        public GridDatos()
+        public GridD()
         {
             InitializeComponent();
         }

@@ -1,7 +1,7 @@
 ﻿
 namespace LinQtoSP_examen_
 {
-    partial class GridDatos
+    partial class GridD
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -43,8 +43,8 @@ namespace LinQtoSP_examen_
             this.BtnEliminar = new System.Windows.Forms.Button();
             this.TxtBuscar = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.GridDatos = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.GridDatos)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -164,20 +164,20 @@ namespace LinQtoSP_examen_
             this.label5.TabIndex = 12;
             this.label5.Text = "Buscar";
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(42, 245);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(530, 376);
-            this.dataGridView1.TabIndex = 14;
-            // 
             // GridDatos
+            // 
+            this.GridDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.GridDatos.Location = new System.Drawing.Point(42, 240);
+            this.GridDatos.Name = "GridDatos";
+            this.GridDatos.Size = new System.Drawing.Size(530, 376);
+            this.GridDatos.TabIndex = 14;
+            // 
+            // GridD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(617, 649);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.GridDatos);
             this.Controls.Add(this.TxtBuscar);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.BtnEliminar);
@@ -192,9 +192,9 @@ namespace LinQtoSP_examen_
             this.Controls.Add(this.label2);
             this.Controls.Add(this.TxtNombre);
             this.Controls.Add(this.label1);
-            this.Name = "GridDatos";
+            this.Name = "GridD";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GridDatos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -216,7 +216,7 @@ namespace LinQtoSP_examen_
         private System.Windows.Forms.Button BtnEliminar;
         private System.Windows.Forms.TextBox TxtBuscar;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView GridDatos;
     }
 }
 
