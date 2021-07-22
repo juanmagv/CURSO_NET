@@ -36,7 +36,7 @@ namespace BANCOREPASOLUNES
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.txIdcliente = new System.Windows.Forms.TextBox();
+            this.txtdcliente = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtApellidos = new System.Windows.Forms.TextBox();
@@ -55,7 +55,7 @@ namespace BANCOREPASOLUNES
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(217, 13);
+            this.textBox1.Location = new System.Drawing.Point(193, 14);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(390, 20);
             this.textBox1.TabIndex = 1;
@@ -76,6 +76,7 @@ namespace BANCOREPASOLUNES
             this.btnAgregar.TabIndex = 3;
             this.btnAgregar.Text = "AGREGAR";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnEliminar
             // 
@@ -105,12 +106,12 @@ namespace BANCOREPASOLUNES
             this.label1.Text = "IDCLIENTE";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // txIdcliente
+            // txtdcliente
             // 
-            this.txIdcliente.Location = new System.Drawing.Point(660, 114);
-            this.txIdcliente.Name = "txIdcliente";
-            this.txIdcliente.Size = new System.Drawing.Size(128, 20);
-            this.txIdcliente.TabIndex = 7;
+            this.txtdcliente.Location = new System.Drawing.Point(660, 114);
+            this.txtdcliente.Name = "txtdcliente";
+            this.txtdcliente.Size = new System.Drawing.Size(128, 20);
+            this.txtdcliente.TabIndex = 7;
             // 
             // txtNombre
             // 
@@ -163,7 +164,7 @@ namespace BANCOREPASOLUNES
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txIdcliente);
+            this.Controls.Add(this.txtdcliente);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnEliminar);
@@ -173,6 +174,7 @@ namespace BANCOREPASOLUNES
             this.Controls.Add(this.comboBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -188,7 +190,7 @@ namespace BANCOREPASOLUNES
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txIdcliente;
+        private System.Windows.Forms.TextBox txtdcliente;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtApellidos;
