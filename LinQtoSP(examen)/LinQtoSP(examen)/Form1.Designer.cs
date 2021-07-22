@@ -44,6 +44,7 @@ namespace LinQtoSP_examen_
             this.TxtBuscar = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.GridDatos = new System.Windows.Forms.DataGridView();
+            this.btnBuscar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.GridDatos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -176,11 +177,22 @@ namespace LinQtoSP_examen_
             this.GridDatos.Size = new System.Drawing.Size(530, 376);
             this.GridDatos.TabIndex = 14;
             // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Location = new System.Drawing.Point(415, 195);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscar.TabIndex = 15;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
             // GridD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(617, 649);
+            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.GridDatos);
             this.Controls.Add(this.TxtBuscar);
             this.Controls.Add(this.label5);
@@ -222,6 +234,7 @@ namespace LinQtoSP_examen_
         private System.Windows.Forms.TextBox TxtBuscar;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView GridDatos;
+        private System.Windows.Forms.Button btnBuscar;
     }
 }
 

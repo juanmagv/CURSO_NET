@@ -26,6 +26,12 @@ namespace LinQtoSP_examen_
 
         private void BtnNuevo_Click(object sender, EventArgs e)
         {
+            TxtNombre.Text = "";
+            TxtApellido1.Text = "";
+            TxtApellido2.Text = "";
+            TxtBuscar.Text = "";
+            TxtTelefono.Text = "";
+
            
         }
 
@@ -54,6 +60,19 @@ namespace LinQtoSP_examen_
         private void GridD_Load(object sender, EventArgs e)
         {
             this.listarclientes();
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+
+
+        {
+            if ((TxtBuscar.Text== " ") || (TxtBuscar.Text =="" )){
+                GridDatos.DataSource = ClienteLinq.ListarClientes();
+            }
+            else {
+                GridDatos.DataSource = ClienteLinq.BuscarCliente(TxtBuscar.Text);
+            }
+            
         }
     }
 }
