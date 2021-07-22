@@ -198,6 +198,7 @@ namespace LinQtoSP_examen_
             this.Controls.Add(this.label1);
             this.Name = "GridD";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.GridD_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GridDatos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

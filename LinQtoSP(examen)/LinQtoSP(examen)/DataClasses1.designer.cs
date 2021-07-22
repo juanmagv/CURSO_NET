@@ -84,9 +84,17 @@ namespace LinQtoSP_examen_
 		}
 		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.Modificarcliente")]
-		public void Modificarcliente([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Nombre", DbType="VarChar(50)")] string nombre, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Apellido1", DbType="VarChar(50)")] string apellido1, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Apellido2", DbType="VarChar(50)")] string apellido2, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Telefono", DbType="VarChar(50)")] string telefono)
+		public int Modificarcliente([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Nombre", DbType="VarChar(50)")] string nombre, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Apellido1", DbType="VarChar(50)")] string apellido1, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Apellido2", DbType="VarChar(50)")] string apellido2, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Telefono", DbType="VarChar(50)")] string telefono)
 		{
-			this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), nombre, apellido1, apellido2, telefono);
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), nombre, apellido1, apellido2, telefono);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ListarClientes")]
+		public ISingleResult<ListarClientesResult> ListarClientes()
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+			return ((ISingleResult<ListarClientesResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -102,6 +110,86 @@ namespace LinQtoSP_examen_
 		private string _Telefono;
 		
 		public BuscarClienteResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Nombre", DbType="NVarChar(50)")]
+		public string Nombre
+		{
+			get
+			{
+				return this._Nombre;
+			}
+			set
+			{
+				if ((this._Nombre != value))
+				{
+					this._Nombre = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Apellido1", DbType="NVarChar(50)")]
+		public string Apellido1
+		{
+			get
+			{
+				return this._Apellido1;
+			}
+			set
+			{
+				if ((this._Apellido1 != value))
+				{
+					this._Apellido1 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Apellido2", DbType="NVarChar(50)")]
+		public string Apellido2
+		{
+			get
+			{
+				return this._Apellido2;
+			}
+			set
+			{
+				if ((this._Apellido2 != value))
+				{
+					this._Apellido2 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Telefono", DbType="NVarChar(50)")]
+		public string Telefono
+		{
+			get
+			{
+				return this._Telefono;
+			}
+			set
+			{
+				if ((this._Telefono != value))
+				{
+					this._Telefono = value;
+				}
+			}
+		}
+	}
+	
+	public partial class ListarClientesResult
+	{
+		
+		private string _Nombre;
+		
+		private string _Apellido1;
+		
+		private string _Apellido2;
+		
+		private string _Telefono;
+		
+		public ListarClientesResult()
 		{
 		}
 		

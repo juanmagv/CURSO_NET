@@ -25,5 +25,14 @@
     <Parameter Name="Apellido1" Parameter="apellido1" Type="System.String" DbType="VarChar(50)" />
     <Parameter Name="Apellido2" Parameter="apellido2" Type="System.String" DbType="VarChar(50)" />
     <Parameter Name="Telefono" Parameter="telefono" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.ListarClientes" Method="ListarClientes">
+    <ElementType Name="ListarClientesResult">
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Apellido1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Apellido2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Telefono" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </ElementType>
   </Function>
 </Database>

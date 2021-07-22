@@ -1,0 +1,10 @@
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\LinQtoSP(examen)\LinQtoSP(examen)\bin\Debug\LinQtoSP(examen).exe.config
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\LinQtoSP(examen)\LinQtoSP(examen)\bin\Debug\LinQtoSP(examen).exe
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\LinQtoSP(examen)\LinQtoSP(examen)\bin\Debug\LinQtoSP(examen).pdb
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\LinQtoSP(examen)\LinQtoSP(examen)\obj\Debug\LinQtoSP(examen).csproj.AssemblyReference.cache
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\LinQtoSP(examen)\LinQtoSP(examen)\obj\Debug\LinQtoSP_examen_.GridD.resources
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\LinQtoSP(examen)\LinQtoSP(examen)\obj\Debug\LinQtoSP_examen_.Properties.Resources.resources
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\LinQtoSP(examen)\LinQtoSP(examen)\obj\Debug\LinQtoSP(examen).csproj.GenerateResource.cache
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\LinQtoSP(examen)\LinQtoSP(examen)\obj\Debug\LinQtoSP(examen).csproj.CoreCompileInputs.cache
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\LinQtoSP(examen)\LinQtoSP(examen)\obj\Debug\LinQtoSP(examen).exe
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\LinQtoSP(examen)\LinQtoSP(examen)\obj\Debug\LinQtoSP(examen).pdb
