@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="REPASOLUNESr" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ASATA403\SQLEXPRESSJUANMA;Initial Catalog=REPASOLUNESr;Persist Security Info=True;User ID=sa" SettingsObjectName="BANCOREPASOLUNES.Properties.Settings" SettingsPropertyName="REPASOLUNESrConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.SP_MODIFICAR_CLIENTE" Method="SP_MODIFICAR_CLIENTE">
+    <Parameter Name="IDCLIENTE" Parameter="iDCLIENTE" Type="System.String" DbType="VarChar(5)" />
+    <Parameter Name="APELLIDOS" Parameter="aPELLIDOS" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="NOMBRES" Parameter="nOMBRES" Type="System.String" DbType="VarChar(30)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_MOSTRAR_TODA_INFORMACION" Method="SP_MOSTRAR_TODA_INFORMACION">
+    <Parameter Name="IDCUENTA" Parameter="iDCUENTA" Type="System.String" DbType="VarChar(5)" />
+    <ElementType Name="SP_MOSTRAR_TODA_INFORMACIONResult">
+      <Column Name="IDCLIENTE" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="IDCUENTA" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="SALDO" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="DIVISA" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="IDCLIENTE1" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="APELLIDOS" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="NOMBRES" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="IDCUENTA1" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="TIPO" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="MONTO" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="FECHA" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_crear_cliente" Method="sp_crear_cliente">
+    <Parameter Name="IDCLIENTE" Parameter="iDCLIENTE" Type="System.String" DbType="VarChar(5)" />
+    <Parameter Name="APELLIDOS" Parameter="aPELLIDOS" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="NOMBRES" Parameter="nOMBRES" Type="System.String" DbType="VarChar(30)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_ELIMINARCLIENTE" Method="sp_ELIMINARCLIENTE">
+    <Parameter Name="IDCLIENTE" Parameter="iDCLIENTE" Type="System.String" DbType="VarChar(5)" />
+  </Function>
+</Database>
