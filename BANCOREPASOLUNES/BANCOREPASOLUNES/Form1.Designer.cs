@@ -29,8 +29,8 @@ namespace BANCOREPASOLUNES
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cbBusqueda = new System.Windows.Forms.ComboBox();
+            this.txtBuscar = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
@@ -42,23 +42,30 @@ namespace BANCOREPASOLUNES
             this.txtApellidos = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.BTNbUSCAR = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // cbBusqueda
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(56, 13);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 0;
+            this.cbBusqueda.FormattingEnabled = true;
+            this.cbBusqueda.Items.AddRange(new object[] {
+            "IDCLIENTE",
+            "NOMBRE",
+            "APELLIDOS"});
+            this.cbBusqueda.Location = new System.Drawing.Point(56, 13);
+            this.cbBusqueda.Name = "cbBusqueda";
+            this.cbBusqueda.Size = new System.Drawing.Size(121, 21);
+            this.cbBusqueda.TabIndex = 0;
+            this.cbBusqueda.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // textBox1
+            // txtBuscar
             // 
-            this.textBox1.Location = new System.Drawing.Point(193, 14);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(390, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtBuscar.Location = new System.Drawing.Point(193, 14);
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Size = new System.Drawing.Size(390, 20);
+            this.txtBuscar.TabIndex = 1;
             // 
             // dataGridView1
             // 
@@ -67,6 +74,7 @@ namespace BANCOREPASOLUNES
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(546, 308);
             this.dataGridView1.TabIndex = 2;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // btnAgregar
             // 
@@ -86,6 +94,7 @@ namespace BANCOREPASOLUNES
             this.btnEliminar.TabIndex = 4;
             this.btnEliminar.Text = "ELIMINAR";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnModificar
             // 
@@ -95,6 +104,7 @@ namespace BANCOREPASOLUNES
             this.btnModificar.TabIndex = 5;
             this.btnModificar.Text = "MODIFICAR";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // label1
             // 
@@ -153,12 +163,35 @@ namespace BANCOREPASOLUNES
             this.btnSalir.TabIndex = 12;
             this.btnSalir.Text = "SALIR";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // BTNbUSCAR
+            // 
+            this.BTNbUSCAR.Location = new System.Drawing.Point(616, 14);
+            this.BTNbUSCAR.Name = "BTNbUSCAR";
+            this.BTNbUSCAR.Size = new System.Drawing.Size(75, 23);
+            this.BTNbUSCAR.TabIndex = 13;
+            this.BTNbUSCAR.Text = "BUSCAR";
+            this.BTNbUSCAR.UseVisualStyleBackColor = true;
+            this.BTNbUSCAR.Click += new System.EventHandler(this.BTNbUSCAR_Click);
+            // 
+            // btnReset
+            // 
+            this.btnReset.Location = new System.Drawing.Point(713, 14);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(75, 23);
+            this.btnReset.TabIndex = 14;
+            this.btnReset.Text = "RESET";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnReset);
+            this.Controls.Add(this.BTNbUSCAR);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.txtApellidos);
             this.Controls.Add(this.label3);
@@ -170,8 +203,8 @@ namespace BANCOREPASOLUNES
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.txtBuscar);
+            this.Controls.Add(this.cbBusqueda);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -183,8 +216,8 @@ namespace BANCOREPASOLUNES
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox cbBusqueda;
+        private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnEliminar;
@@ -196,6 +229,8 @@ namespace BANCOREPASOLUNES
         private System.Windows.Forms.TextBox txtApellidos;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button BTNbUSCAR;
+        private System.Windows.Forms.Button btnReset;
     }
 }
 

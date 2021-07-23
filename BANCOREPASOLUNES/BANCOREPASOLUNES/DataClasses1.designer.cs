@@ -62,20 +62,6 @@ namespace BANCOREPASOLUNES
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_MODIFICAR_CLIENTE")]
-		public int SP_MODIFICAR_CLIENTE([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDCLIENTE", DbType="VarChar(5)")] string iDCLIENTE, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="APELLIDOS", DbType="VarChar(30)")] string aPELLIDOS, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="NOMBRES", DbType="VarChar(30)")] string nOMBRES)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iDCLIENTE, aPELLIDOS, nOMBRES);
-			return ((int)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_MOSTRAR_TODA_INFORMACION")]
-		public ISingleResult<SP_MOSTRAR_TODA_INFORMACIONResult> SP_MOSTRAR_TODA_INFORMACION([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDCUENTA", DbType="VarChar(5)")] string iDCUENTA)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iDCUENTA);
-			return ((ISingleResult<SP_MOSTRAR_TODA_INFORMACIONResult>)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_crear_cliente")]
 		public int sp_crear_cliente([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDCLIENTE", DbType="VarChar(5)")] string iDCLIENTE, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="APELLIDOS", DbType="VarChar(30)")] string aPELLIDOS, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="NOMBRES", DbType="VarChar(30)")] string nOMBRES)
 		{
@@ -84,9 +70,59 @@ namespace BANCOREPASOLUNES
 		}
 		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_ELIMINARCLIENTE")]
-		public void sp_ELIMINARCLIENTE([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDCLIENTE", DbType="VarChar(5)")] string iDCLIENTE)
+		public int sp_ELIMINARCLIENTE([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDCLIENTE", DbType="VarChar(5)")] string iDCLIENTE)
 		{
-			this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iDCLIENTE);
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iDCLIENTE);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_MODIFICAR_CLIENTE")]
+		public int SP_MODIFICAR_CLIENTE([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDCLIENTE", DbType="VarChar(5)")] string iDCLIENTE, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="APELLIDOS", DbType="VarChar(30)")] string aPELLIDOS, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="NOMBRES", DbType="VarChar(30)")] string nOMBRES)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iDCLIENTE, aPELLIDOS, nOMBRES);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_MOSTRAR_TODA_INFORMACION")]
+		public ISingleResult<SP_MOSTRAR_TODA_INFORMACIONResult> SP_MOSTRAR_TODA_INFORMACION([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDCLIENTE", DbType="VarChar(5)")] string iDCLIENTE)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iDCLIENTE);
+			return ((ISingleResult<SP_MOSTRAR_TODA_INFORMACIONResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_mostrartodo")]
+		public ISingleResult<sp_mostrartodoResult> sp_mostrartodo()
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+			return ((ISingleResult<sp_mostrartodoResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.spbuscarporapellido")]
+		public ISingleResult<spbuscarporapellidoResult> spbuscarporapellido([global::System.Data.Linq.Mapping.ParameterAttribute(Name="APELLIDOS", DbType="VarChar(30)")] string aPELLIDOS)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), aPELLIDOS);
+			return ((ISingleResult<spbuscarporapellidoResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.spbuscarporIDCLIENTE")]
+		public ISingleResult<spbuscarporIDCLIENTEResult> spbuscarporIDCLIENTE([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDCLIENTE", DbType="VarChar(5)")] string iDCLIENTE)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iDCLIENTE);
+			return ((ISingleResult<spbuscarporIDCLIENTEResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.spbuscarpornombre")]
+		public ISingleResult<spbuscarpornombreResult> spbuscarpornombre([global::System.Data.Linq.Mapping.ParameterAttribute(Name="NOMBRES", DbType="VarChar(30)")] string nOMBRES)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), nOMBRES);
+			return ((ISingleResult<spbuscarpornombreResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_contarcliente")]
+		public ISingleResult<sp_contarclienteResult> sp_contarcliente([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDCLIENTE", DbType="VarChar(5)")] string iDCLIENTE)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iDCLIENTE);
+			return ((ISingleResult<sp_contarclienteResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -95,31 +131,15 @@ namespace BANCOREPASOLUNES
 		
 		private string _IDCLIENTE;
 		
-		private string _IDCUENTA;
-		
-		private double _SALDO;
-		
-		private string _DIVISA;
-		
-		private string _IDCLIENTE1;
-		
 		private string _APELLIDOS;
 		
 		private string _NOMBRES;
-		
-		private string _IDCUENTA1;
-		
-		private string _TIPO;
-		
-		private double _MONTO;
-		
-		private System.DateTime _FECHA;
 		
 		public SP_MOSTRAR_TODA_INFORMACIONResult()
 		{
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IDCLIENTE", DbType="VarChar(5)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IDCLIENTE", DbType="VarChar(5) NOT NULL", CanBeNull=false)]
 		public string IDCLIENTE
 		{
 			get
@@ -131,70 +151,6 @@ namespace BANCOREPASOLUNES
 				if ((this._IDCLIENTE != value))
 				{
 					this._IDCLIENTE = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IDCUENTA", DbType="VarChar(5) NOT NULL", CanBeNull=false)]
-		public string IDCUENTA
-		{
-			get
-			{
-				return this._IDCUENTA;
-			}
-			set
-			{
-				if ((this._IDCUENTA != value))
-				{
-					this._IDCUENTA = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SALDO", DbType="Float NOT NULL")]
-		public double SALDO
-		{
-			get
-			{
-				return this._SALDO;
-			}
-			set
-			{
-				if ((this._SALDO != value))
-				{
-					this._SALDO = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DIVISA", DbType="VarChar(20)")]
-		public string DIVISA
-		{
-			get
-			{
-				return this._DIVISA;
-			}
-			set
-			{
-				if ((this._DIVISA != value))
-				{
-					this._DIVISA = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IDCLIENTE1", DbType="VarChar(5) NOT NULL", CanBeNull=false)]
-		public string IDCLIENTE1
-		{
-			get
-			{
-				return this._IDCLIENTE1;
-			}
-			set
-			{
-				if ((this._IDCLIENTE1 != value))
-				{
-					this._IDCLIENTE1 = value;
 				}
 			}
 		}
@@ -230,67 +186,277 @@ namespace BANCOREPASOLUNES
 				}
 			}
 		}
+	}
+	
+	public partial class sp_mostrartodoResult
+	{
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IDCUENTA1", DbType="VarChar(5) NOT NULL", CanBeNull=false)]
-		public string IDCUENTA1
+		private string _IDCLIENTE;
+		
+		private string _APELLIDOS;
+		
+		private string _NOMBRES;
+		
+		public sp_mostrartodoResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IDCLIENTE", DbType="VarChar(5) NOT NULL", CanBeNull=false)]
+		public string IDCLIENTE
 		{
 			get
 			{
-				return this._IDCUENTA1;
+				return this._IDCLIENTE;
 			}
 			set
 			{
-				if ((this._IDCUENTA1 != value))
+				if ((this._IDCLIENTE != value))
 				{
-					this._IDCUENTA1 = value;
+					this._IDCLIENTE = value;
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TIPO", DbType="VarChar(20) NOT NULL", CanBeNull=false)]
-		public string TIPO
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_APELLIDOS", DbType="VarChar(30) NOT NULL", CanBeNull=false)]
+		public string APELLIDOS
 		{
 			get
 			{
-				return this._TIPO;
+				return this._APELLIDOS;
 			}
 			set
 			{
-				if ((this._TIPO != value))
+				if ((this._APELLIDOS != value))
 				{
-					this._TIPO = value;
+					this._APELLIDOS = value;
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MONTO", DbType="Float NOT NULL")]
-		public double MONTO
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NOMBRES", DbType="VarChar(30) NOT NULL", CanBeNull=false)]
+		public string NOMBRES
 		{
 			get
 			{
-				return this._MONTO;
+				return this._NOMBRES;
 			}
 			set
 			{
-				if ((this._MONTO != value))
+				if ((this._NOMBRES != value))
 				{
-					this._MONTO = value;
+					this._NOMBRES = value;
+				}
+			}
+		}
+	}
+	
+	public partial class spbuscarporapellidoResult
+	{
+		
+		private string _IDCLIENTE;
+		
+		private string _APELLIDOS;
+		
+		private string _NOMBRES;
+		
+		public spbuscarporapellidoResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IDCLIENTE", DbType="VarChar(5) NOT NULL", CanBeNull=false)]
+		public string IDCLIENTE
+		{
+			get
+			{
+				return this._IDCLIENTE;
+			}
+			set
+			{
+				if ((this._IDCLIENTE != value))
+				{
+					this._IDCLIENTE = value;
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FECHA", DbType="Date NOT NULL")]
-		public System.DateTime FECHA
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_APELLIDOS", DbType="VarChar(30) NOT NULL", CanBeNull=false)]
+		public string APELLIDOS
 		{
 			get
 			{
-				return this._FECHA;
+				return this._APELLIDOS;
 			}
 			set
 			{
-				if ((this._FECHA != value))
+				if ((this._APELLIDOS != value))
 				{
-					this._FECHA = value;
+					this._APELLIDOS = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NOMBRES", DbType="VarChar(30) NOT NULL", CanBeNull=false)]
+		public string NOMBRES
+		{
+			get
+			{
+				return this._NOMBRES;
+			}
+			set
+			{
+				if ((this._NOMBRES != value))
+				{
+					this._NOMBRES = value;
+				}
+			}
+		}
+	}
+	
+	public partial class spbuscarporIDCLIENTEResult
+	{
+		
+		private string _IDCLIENTE;
+		
+		private string _APELLIDOS;
+		
+		private string _NOMBRES;
+		
+		public spbuscarporIDCLIENTEResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IDCLIENTE", DbType="VarChar(5) NOT NULL", CanBeNull=false)]
+		public string IDCLIENTE
+		{
+			get
+			{
+				return this._IDCLIENTE;
+			}
+			set
+			{
+				if ((this._IDCLIENTE != value))
+				{
+					this._IDCLIENTE = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_APELLIDOS", DbType="VarChar(30) NOT NULL", CanBeNull=false)]
+		public string APELLIDOS
+		{
+			get
+			{
+				return this._APELLIDOS;
+			}
+			set
+			{
+				if ((this._APELLIDOS != value))
+				{
+					this._APELLIDOS = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NOMBRES", DbType="VarChar(30) NOT NULL", CanBeNull=false)]
+		public string NOMBRES
+		{
+			get
+			{
+				return this._NOMBRES;
+			}
+			set
+			{
+				if ((this._NOMBRES != value))
+				{
+					this._NOMBRES = value;
+				}
+			}
+		}
+	}
+	
+	public partial class spbuscarpornombreResult
+	{
+		
+		private string _IDCLIENTE;
+		
+		private string _APELLIDOS;
+		
+		private string _NOMBRES;
+		
+		public spbuscarpornombreResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IDCLIENTE", DbType="VarChar(5) NOT NULL", CanBeNull=false)]
+		public string IDCLIENTE
+		{
+			get
+			{
+				return this._IDCLIENTE;
+			}
+			set
+			{
+				if ((this._IDCLIENTE != value))
+				{
+					this._IDCLIENTE = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_APELLIDOS", DbType="VarChar(30) NOT NULL", CanBeNull=false)]
+		public string APELLIDOS
+		{
+			get
+			{
+				return this._APELLIDOS;
+			}
+			set
+			{
+				if ((this._APELLIDOS != value))
+				{
+					this._APELLIDOS = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NOMBRES", DbType="VarChar(30) NOT NULL", CanBeNull=false)]
+		public string NOMBRES
+		{
+			get
+			{
+				return this._NOMBRES;
+			}
+			set
+			{
+				if ((this._NOMBRES != value))
+				{
+					this._NOMBRES = value;
+				}
+			}
+		}
+	}
+	
+	public partial class sp_contarclienteResult
+	{
+		
+		private System.Nullable<int> _Column1;
+		
+		public sp_contarclienteResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="", Storage="_Column1", DbType="Int")]
+		public System.Nullable<int> Column1
+		{
+			get
+			{
+				return this._Column1;
+			}
+			set
+			{
+				if ((this._Column1 != value))
+				{
+					this._Column1 = value;
 				}
 			}
 		}

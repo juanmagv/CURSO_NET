@@ -1,0 +1,10 @@
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\BANCOREPASOLUNES\BANCOREPASOLUNES\bin\Debug\BANCOREPASOLUNES.exe.config
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\BANCOREPASOLUNES\BANCOREPASOLUNES\bin\Debug\BANCOREPASOLUNES.exe
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\BANCOREPASOLUNES\BANCOREPASOLUNES\bin\Debug\BANCOREPASOLUNES.pdb
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\BANCOREPASOLUNES\BANCOREPASOLUNES\obj\Debug\BANCOREPASOLUNES.csproj.AssemblyReference.cache
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\BANCOREPASOLUNES\BANCOREPASOLUNES\obj\Debug\BANCOREPASOLUNES.Form1.resources
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\BANCOREPASOLUNES\BANCOREPASOLUNES\obj\Debug\BANCOREPASOLUNES.Properties.Resources.resources
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\BANCOREPASOLUNES\BANCOREPASOLUNES\obj\Debug\BANCOREPASOLUNES.csproj.GenerateResource.cache
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\BANCOREPASOLUNES\BANCOREPASOLUNES\obj\Debug\BANCOREPASOLUNES.csproj.CoreCompileInputs.cache
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\BANCOREPASOLUNES\BANCOREPASOLUNES\obj\Debug\BANCOREPASOLUNES.exe
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\BANCOREPASOLUNES\BANCOREPASOLUNES\obj\Debug\BANCOREPASOLUNES.pdb
