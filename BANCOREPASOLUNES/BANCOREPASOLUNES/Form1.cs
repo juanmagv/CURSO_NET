@@ -31,16 +31,31 @@ namespace BANCOREPASOLUNES
         private void btnAgregar_Click(object sender, EventArgs e)
 
         {
-            try
+            if (txtNombre.Text != "" && txtApellidos.Text != "" && txtdcliente.Text != "")
             {
-                LinqTosql.sp_crear_cliente(txtdcliente.Text, txtApellidos.Text, txtNombre.Text);
-                this.listarclientes();
+
+                try
+                {
+                    LinqTosql.sp_crear_cliente(txtdcliente.Text, txtApellidos.Text, txtNombre.Text);
+                    this.listarclientes();
+
+                }
+                catch
+                {
+                    MessageBox.Show("ERROR EL USUARIO YA EXISTE");
+                }
+
+
+
 
             }
-            catch
+            else
             {
-                MessageBox.Show("ERROR EL USUARIO YA EXISTE");
+                MessageBox.Show("FALTAN DATOS");
             }
+          
+          
+          
 
 
 
@@ -53,17 +68,36 @@ namespace BANCOREPASOLUNES
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
+
         {
-            LinqTosql.sp_ELIMINARCLIENTE(txtdcliente.Text);
-            this.listarclientes();
+          if  (txtdcliente.Text != "")
+            {
+                LinqTosql.sp_ELIMINARCLIENTE(txtdcliente.Text);
+                this.listarclientes();
+            }
+            else
+            {
+                MessageBox.Show("FALTAN DATOS");
+            }
+           
 
 
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            LinqTosql.SP_MODIFICAR_CLIENTE(txtdcliente.Text, txtApellidos.Text, txtNombre.Text);
-            this.listarclientes();
+            if (txtNombre.Text != "" && txtApellidos.Text != "" && txtdcliente.Text != "")
+            {
+                LinqTosql.SP_MODIFICAR_CLIENTE(txtdcliente.Text, txtApellidos.Text, txtNombre.Text);
+                this.listarclientes();
+            }
+            else
+            {
+                MessageBox.Show("FALTAN DATOS");
+            }
+
+
+           
 
 
         }
