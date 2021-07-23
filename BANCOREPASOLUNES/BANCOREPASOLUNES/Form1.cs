@@ -31,9 +31,17 @@ namespace BANCOREPASOLUNES
         private void btnAgregar_Click(object sender, EventArgs e)
 
         {
-            
-            LinqTosql.sp_crear_cliente(txtdcliente.Text, txtApellidos.Text, txtNombre.Text);
-            this.listarclientes();
+            try
+            {
+                LinqTosql.sp_crear_cliente(txtdcliente.Text, txtApellidos.Text, txtNombre.Text);
+                this.listarclientes();
+
+            }
+            catch
+            {
+                MessageBox.Show("ERROR EL USUARIO YA EXISTE");
+            }
+
 
 
 
