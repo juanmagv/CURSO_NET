@@ -37,7 +37,7 @@ namespace lunes_26_Alumnos
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.cbTurno = new System.Windows.Forms.ComboBox();
-            this.bcSexo = new System.Windows.Forms.ComboBox();
+            this.cbSexo = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.cbEspecialidad = new System.Windows.Forms.ComboBox();
@@ -46,12 +46,12 @@ namespace lunes_26_Alumnos
             this.label7 = new System.Windows.Forms.Label();
             this.chRepetidor = new System.Windows.Forms.CheckBox();
             this.Busqueda = new System.Windows.Forms.GroupBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.btBuscarCodigo = new System.Windows.Forms.Button();
-            this.btBuscarDNI = new System.Windows.Forms.Button();
-            this.txtBuscarCodigo = new System.Windows.Forms.TextBox();
             this.txtBuscarDNI = new System.Windows.Forms.TextBox();
+            this.txtBuscarCodigo = new System.Windows.Forms.TextBox();
+            this.btBuscarDNI = new System.Windows.Forms.Button();
+            this.btBuscarCodigo = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.btnAlta = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -129,16 +129,16 @@ namespace lunes_26_Alumnos
             this.cbTurno.Size = new System.Drawing.Size(121, 21);
             this.cbTurno.TabIndex = 7;
             // 
-            // bcSexo
+            // cbSexo
             // 
-            this.bcSexo.FormattingEnabled = true;
-            this.bcSexo.Items.AddRange(new object[] {
+            this.cbSexo.FormattingEnabled = true;
+            this.cbSexo.Items.AddRange(new object[] {
             "Masculino",
             "Femenino"});
-            this.bcSexo.Location = new System.Drawing.Point(242, 82);
-            this.bcSexo.Name = "bcSexo";
-            this.bcSexo.Size = new System.Drawing.Size(121, 21);
-            this.bcSexo.TabIndex = 9;
+            this.cbSexo.Location = new System.Drawing.Point(242, 82);
+            this.cbSexo.Name = "cbSexo";
+            this.cbSexo.Size = new System.Drawing.Size(121, 21);
+            this.cbSexo.TabIndex = 9;
             // 
             // label4
             // 
@@ -162,7 +162,9 @@ namespace lunes_26_Alumnos
             // 
             this.cbEspecialidad.FormattingEnabled = true;
             this.cbEspecialidad.Items.AddRange(new object[] {
-            "Todos"});
+            "JAVASCRIPT",
+            "BASE DE DATOS",
+            "HTML"});
             this.cbEspecialidad.Location = new System.Drawing.Point(92, 121);
             this.cbEspecialidad.Name = "cbEspecialidad";
             this.cbEspecialidad.Size = new System.Drawing.Size(121, 21);
@@ -221,14 +223,37 @@ namespace lunes_26_Alumnos
             this.Busqueda.TabStop = false;
             this.Busqueda.Text = "Busqueda";
             // 
-            // label8
+            // txtBuscarDNI
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 40);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(40, 13);
-            this.label8.TabIndex = 17;
-            this.label8.Text = "Codigo";
+            this.txtBuscarDNI.Location = new System.Drawing.Point(53, 69);
+            this.txtBuscarDNI.Name = "txtBuscarDNI";
+            this.txtBuscarDNI.Size = new System.Drawing.Size(100, 20);
+            this.txtBuscarDNI.TabIndex = 22;
+            // 
+            // txtBuscarCodigo
+            // 
+            this.txtBuscarCodigo.Location = new System.Drawing.Point(53, 40);
+            this.txtBuscarCodigo.Name = "txtBuscarCodigo";
+            this.txtBuscarCodigo.Size = new System.Drawing.Size(100, 20);
+            this.txtBuscarCodigo.TabIndex = 21;
+            // 
+            // btBuscarDNI
+            // 
+            this.btBuscarDNI.Location = new System.Drawing.Point(162, 69);
+            this.btBuscarDNI.Name = "btBuscarDNI";
+            this.btBuscarDNI.Size = new System.Drawing.Size(37, 23);
+            this.btBuscarDNI.TabIndex = 20;
+            this.btBuscarDNI.UseVisualStyleBackColor = true;
+            this.btBuscarDNI.Click += new System.EventHandler(this.btBuscarDNI_Click);
+            // 
+            // btBuscarCodigo
+            // 
+            this.btBuscarCodigo.Location = new System.Drawing.Point(162, 40);
+            this.btBuscarCodigo.Name = "btBuscarCodigo";
+            this.btBuscarCodigo.Size = new System.Drawing.Size(37, 23);
+            this.btBuscarCodigo.TabIndex = 19;
+            this.btBuscarCodigo.UseVisualStyleBackColor = true;
+            this.btBuscarCodigo.Click += new System.EventHandler(this.btBuscarCodigo_Click);
             // 
             // label9
             // 
@@ -239,35 +264,14 @@ namespace lunes_26_Alumnos
             this.label9.TabIndex = 18;
             this.label9.Text = "DNI";
             // 
-            // btBuscarCodigo
+            // label8
             // 
-            this.btBuscarCodigo.Location = new System.Drawing.Point(162, 40);
-            this.btBuscarCodigo.Name = "btBuscarCodigo";
-            this.btBuscarCodigo.Size = new System.Drawing.Size(37, 23);
-            this.btBuscarCodigo.TabIndex = 19;
-            this.btBuscarCodigo.UseVisualStyleBackColor = true;
-            // 
-            // btBuscarDNI
-            // 
-            this.btBuscarDNI.Location = new System.Drawing.Point(162, 69);
-            this.btBuscarDNI.Name = "btBuscarDNI";
-            this.btBuscarDNI.Size = new System.Drawing.Size(37, 23);
-            this.btBuscarDNI.TabIndex = 20;
-            this.btBuscarDNI.UseVisualStyleBackColor = true;
-            // 
-            // txtBuscarCodigo
-            // 
-            this.txtBuscarCodigo.Location = new System.Drawing.Point(53, 40);
-            this.txtBuscarCodigo.Name = "txtBuscarCodigo";
-            this.txtBuscarCodigo.Size = new System.Drawing.Size(100, 20);
-            this.txtBuscarCodigo.TabIndex = 21;
-            // 
-            // txtBuscarDNI
-            // 
-            this.txtBuscarDNI.Location = new System.Drawing.Point(53, 69);
-            this.txtBuscarDNI.Name = "txtBuscarDNI";
-            this.txtBuscarDNI.Size = new System.Drawing.Size(100, 20);
-            this.txtBuscarDNI.TabIndex = 22;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(6, 40);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(40, 13);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "Codigo";
             // 
             // btnAlta
             // 
@@ -277,6 +281,7 @@ namespace lunes_26_Alumnos
             this.btnAlta.TabIndex = 17;
             this.btnAlta.Text = "Alta";
             this.btnAlta.UseVisualStyleBackColor = true;
+            this.btnAlta.Click += new System.EventHandler(this.btnAlta_Click);
             // 
             // button1
             // 
@@ -286,6 +291,7 @@ namespace lunes_26_Alumnos
             this.button1.TabIndex = 18;
             this.button1.Text = "Baja";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -295,6 +301,7 @@ namespace lunes_26_Alumnos
             this.button2.TabIndex = 19;
             this.button2.Text = "Modifica";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // dataGridView1
             // 
@@ -320,7 +327,7 @@ namespace lunes_26_Alumnos
             this.Controls.Add(this.label6);
             this.Controls.Add(this.cbEspecialidad);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.bcSexo);
+            this.Controls.Add(this.cbSexo);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.cbTurno);
             this.Controls.Add(this.label3);
@@ -332,6 +339,7 @@ namespace lunes_26_Alumnos
             this.Controls.Add(this.Codigo);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.Busqueda.ResumeLayout(false);
             this.Busqueda.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -350,7 +358,7 @@ namespace lunes_26_Alumnos
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cbTurno;
-        private System.Windows.Forms.ComboBox bcSexo;
+        private System.Windows.Forms.ComboBox cbSexo;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cbEspecialidad;

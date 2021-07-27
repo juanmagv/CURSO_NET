@@ -13,3 +13,4 @@ C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\InyeccionSQL\InyeccionSQL\obj\Deb
 C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\InyeccionSQL\InyeccionSQL\obj\Debug\InyeccionSQL.csproj.CoreCompileInputs.cache
 C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\InyeccionSQL\InyeccionSQL\obj\Debug\InyeccionSQL.exe
 C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\InyeccionSQL\InyeccionSQL\obj\Debug\InyeccionSQL.pdb
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\InyeccionSQL\InyeccionSQL\obj\Debug\InyeccionSQL_Content.g.cs

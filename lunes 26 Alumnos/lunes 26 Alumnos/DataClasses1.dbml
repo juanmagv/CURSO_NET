@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="lunes26" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ASATA403\SQLEXPRESSJUANMA;Initial Catalog=lunes26;Persist Security Info=True;User ID=sa" SettingsObjectName="lunes_26_Alumnos.Properties.Settings" SettingsPropertyName="lunes26ConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.sp_Actualizar" Method="sp_Actualizar">
+    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="DNI" Parameter="dNI" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="Turno" Parameter="turno" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="Sexo" Parameter="sexo" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="Repetidor" Parameter="repetidor" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="Modulo" Parameter="modulo" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="Especialidad" Parameter="especialidad" Type="System.String" DbType="NVarChar(25)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_Actualizar_por_codigo" Method="sp_Actualizar_por_codigo">
+    <Parameter Name="Codigo" Parameter="codigo" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="DNI" Parameter="dNI" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="Turno" Parameter="turno" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="Sexo" Parameter="sexo" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="Repetidor" Parameter="repetidor" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="Modulo" Parameter="modulo" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="Especialidad" Parameter="especialidad" Type="System.String" DbType="NVarChar(25)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_Actualizar_por_DNI" Method="sp_Actualizar_por_DNI">
+    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="DNI" Parameter="dNI" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="Turno" Parameter="turno" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="Sexo" Parameter="sexo" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="Repetidor" Parameter="repetidor" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="Modulo" Parameter="modulo" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="Especialidad" Parameter="especialidad" Type="System.String" DbType="NVarChar(25)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_alta" Method="sp_alta">
+    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="DNI" Parameter="dNI" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="Turno" Parameter="turno" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="Sexo" Parameter="sexo" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="Repetidor" Parameter="repetidor" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="Modulo" Parameter="modulo" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="Especialidad" Parameter="especialidad" Type="System.String" DbType="NVarChar(25)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_borrar_por_codigo" Method="sp_borrar_por_codigo">
+    <Parameter Name="Codigo" Parameter="codigo" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_borrar_por_DNI" Method="sp_borrar_por_DNI">
+    <Parameter Name="DNI" Parameter="dNI" Type="System.String" DbType="NVarChar(10)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_Buscar_por_Codigo" Method="sp_Buscar_por_Codigo">
+    <Parameter Name="Codigo" Parameter="codigo" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_Buscar_por_CodigoResult">
+      <Column Name="Codigo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="DNI" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Turno" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Sexo" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Repetidor" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Modulo" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Especialidad" Type="System.String" DbType="NVarChar(25)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Buscar_por_DNI" Method="sp_Buscar_por_DNI">
+    <Parameter Name="DNI" Parameter="dNI" Type="System.String" DbType="NVarChar(10)" />
+    <ElementType Name="sp_Buscar_por_DNIResult">
+      <Column Name="Codigo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="DNI" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Turno" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Sexo" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Repetidor" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Modulo" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Especialidad" Type="System.String" DbType="NVarChar(25)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.ListarTodo" Method="ListarTodo">
+    <ElementType Name="ListarTodoResult">
+      <Column Name="Codigo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="DNI" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Turno" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Sexo" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Repetidor" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Modulo" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Especialidad" Type="System.String" DbType="NVarChar(25)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

@@ -1,0 +1,10 @@
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\lunes 26 Alumnos\lunes 26 Alumnos\bin\Debug\lunes 26 Alumnos.exe.config
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\lunes 26 Alumnos\lunes 26 Alumnos\bin\Debug\lunes 26 Alumnos.exe
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\lunes 26 Alumnos\lunes 26 Alumnos\bin\Debug\lunes 26 Alumnos.pdb
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\lunes 26 Alumnos\lunes 26 Alumnos\obj\Debug\lunes 26 Alumnos.csproj.AssemblyReference.cache
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\lunes 26 Alumnos\lunes 26 Alumnos\obj\Debug\lunes_26_Alumnos.Form1.resources
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\lunes 26 Alumnos\lunes 26 Alumnos\obj\Debug\lunes_26_Alumnos.Properties.Resources.resources
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\lunes 26 Alumnos\lunes 26 Alumnos\obj\Debug\lunes 26 Alumnos.csproj.GenerateResource.cache
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\lunes 26 Alumnos\lunes 26 Alumnos\obj\Debug\lunes 26 Alumnos.csproj.CoreCompileInputs.cache
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\lunes 26 Alumnos\lunes 26 Alumnos\obj\Debug\lunes 26 Alumnos.exe
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\lunes 26 Alumnos\lunes 26 Alumnos\obj\Debug\lunes 26 Alumnos.pdb
