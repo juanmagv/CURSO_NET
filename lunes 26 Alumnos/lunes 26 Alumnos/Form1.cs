@@ -109,7 +109,7 @@ namespace lunes_26_Alumnos
                     cbModulo.Text = "";
                     cbSexo.Text = "";
                     cbTurno.Text = "";
-                    //chRepetidor.Checked = false;
+                    chRepetidor.Checked = false;
 
                     dataGridView1.DataSource = ClienteLinq.ListarTodo();
                     conexion.Close();
