@@ -44,6 +44,9 @@ namespace altas_bajas_y_modificacione_LINQ_tp_SQL_2
             this.btMod = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txtBuscar = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lbContar = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,11 +58,12 @@ namespace altas_bajas_y_modificacione_LINQ_tp_SQL_2
             this.btBuscar.TabIndex = 0;
             this.btBuscar.Text = "Buscar";
             this.btBuscar.UseVisualStyleBackColor = true;
+            this.btBuscar.Click += new System.EventHandler(this.btBuscar_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 73);
+            this.label1.Location = new System.Drawing.Point(12, 73);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(16, 13);
             this.label1.TabIndex = 1;
@@ -82,7 +86,7 @@ namespace altas_bajas_y_modificacione_LINQ_tp_SQL_2
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(25, 116);
+            this.label2.Location = new System.Drawing.Point(12, 116);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 3;
@@ -98,7 +102,7 @@ namespace altas_bajas_y_modificacione_LINQ_tp_SQL_2
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(25, 155);
+            this.label3.Location = new System.Drawing.Point(12, 155);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(44, 13);
             this.label3.TabIndex = 5;
@@ -114,7 +118,7 @@ namespace altas_bajas_y_modificacione_LINQ_tp_SQL_2
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(25, 194);
+            this.label4.Location = new System.Drawing.Point(12, 194);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(32, 13);
             this.label4.TabIndex = 7;
@@ -132,35 +136,38 @@ namespace altas_bajas_y_modificacione_LINQ_tp_SQL_2
             // 
             // btAlta
             // 
-            this.btAlta.Location = new System.Drawing.Point(28, 294);
+            this.btAlta.Location = new System.Drawing.Point(22, 280);
             this.btAlta.Name = "btAlta";
             this.btAlta.Size = new System.Drawing.Size(75, 23);
             this.btAlta.TabIndex = 11;
             this.btAlta.Text = "Alta";
             this.btAlta.UseVisualStyleBackColor = true;
+            this.btAlta.Click += new System.EventHandler(this.btAlta_Click);
             // 
             // btBaja
             // 
-            this.btBaja.Location = new System.Drawing.Point(28, 347);
+            this.btBaja.Location = new System.Drawing.Point(22, 322);
             this.btBaja.Name = "btBaja";
             this.btBaja.Size = new System.Drawing.Size(75, 23);
             this.btBaja.TabIndex = 12;
             this.btBaja.Text = "Baja";
             this.btBaja.UseVisualStyleBackColor = true;
+            this.btBaja.Click += new System.EventHandler(this.btBaja_Click);
             // 
             // btMod
             // 
-            this.btMod.Location = new System.Drawing.Point(28, 399);
+            this.btMod.Location = new System.Drawing.Point(22, 361);
             this.btMod.Name = "btMod";
             this.btMod.Size = new System.Drawing.Size(75, 23);
             this.btMod.TabIndex = 13;
             this.btMod.Text = "Modif.";
             this.btMod.UseVisualStyleBackColor = true;
+            this.btMod.Click += new System.EventHandler(this.btMod_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(354, 47);
+            this.label5.Location = new System.Drawing.Point(393, 35);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(151, 13);
             this.label5.TabIndex = 14;
@@ -171,14 +178,43 @@ namespace altas_bajas_y_modificacione_LINQ_tp_SQL_2
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(213, 73);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(463, 349);
+            this.dataGridView1.Size = new System.Drawing.Size(545, 349);
             this.dataGridView1.TabIndex = 15;
+            // 
+            // txtBuscar
+            // 
+            this.txtBuscar.Location = new System.Drawing.Point(22, 13);
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Size = new System.Drawing.Size(78, 20);
+            this.txtBuscar.TabIndex = 16;
+            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
+            this.txtBuscar.Enter += new System.EventHandler(this.txtBuscar_Enter);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(20, 425);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(0, 13);
+            this.label6.TabIndex = 17;
+            // 
+            // lbContar
+            // 
+            this.lbContar.AutoSize = true;
+            this.lbContar.Location = new System.Drawing.Point(15, 424);
+            this.lbContar.Name = "lbContar";
+            this.lbContar.Size = new System.Drawing.Size(35, 13);
+            this.lbContar.TabIndex = 18;
+            this.lbContar.Text = "label7";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(698, 450);
+            this.ClientSize = new System.Drawing.Size(771, 450);
+            this.Controls.Add(this.lbContar);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btMod);
@@ -220,6 +256,9 @@ namespace altas_bajas_y_modificacione_LINQ_tp_SQL_2
         private System.Windows.Forms.Button btMod;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox txtBuscar;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lbContar;
     }
 }
 
