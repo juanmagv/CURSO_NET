@@ -59,13 +59,7 @@ namespace Dia_3_del_8_CON_LINQ
                 label8.ForeColor = Color.Black;
                 label8.BackColor = Color.Red;
                 CargaGrid();
-                txtInscripcion.Text = "";
-                txtNombre.Text = "";
-                txtDireccion.Text = "";
-                txtSS.Text = "";
-                rbHombre.Checked = false;
-                rbMujer.Checked = false;
-                dpfechaNacimiento.Value = date;
+                
               
               
 
@@ -77,12 +71,16 @@ namespace Dia_3_del_8_CON_LINQ
                 {
                     MessageBox.Show("FALTAN DATOS");
                 }
-                else
-                {
-                    MessageBox.Show("ERROR");
-                }
+               
             }
-          
+            txtInscripcion.Text = "";
+            txtNombre.Text = "";
+            txtDireccion.Text = "";
+            txtSS.Text = "";
+            rbHombre.Checked = false;
+            rbMujer.Checked = false;
+            dpfechaNacimiento.Value = date;
+
         }
 
         private void btBuscar_Click(object sender, EventArgs e)
@@ -117,13 +115,7 @@ namespace Dia_3_del_8_CON_LINQ
 
                 Hospital1.SubmitChanges();
                 CargaGrid();
-                txtInscripcion.Text = "";
-                txtNombre.Text = "";
-                txtDireccion.Text = "";
-                txtSS.Text = "";
-                rbHombre.Checked = false;
-                rbMujer.Checked = false;
-                dpfechaNacimiento.Value = date;
+              
                 label8.Text = "DATOS MODIFICADOS";
                 label8.ForeColor = Color.Black;
                 label8.BackColor = Color.Red;
@@ -143,7 +135,14 @@ namespace Dia_3_del_8_CON_LINQ
                     MessageBox.Show("ERROR");
                 }
             }
-           
+            txtInscripcion.Text = "";
+            txtNombre.Text = "";
+            txtDireccion.Text = "";
+            txtSS.Text = "";
+            rbHombre.Checked = false;
+            rbMujer.Checked = false;
+            dpfechaNacimiento.Value = date;
+
         }
 
         private void btBorrar_Click(object sender, EventArgs e)
@@ -156,13 +155,7 @@ namespace Dia_3_del_8_CON_LINQ
                 Hospital1.Enfermo1.DeleteOnSubmit(MyEnfermo);
                 Hospital1.SubmitChanges();
                 CargaGrid();
-                txtInscripcion.Text = "";
-                txtNombre.Text = "";
-                txtDireccion.Text = "";
-                txtSS.Text = "";
-                rbHombre.Checked = false;
-                rbMujer.Checked = false;
-                dpfechaNacimiento.Value = date;
+             
                 label8.Text = "DATOS BORRADOS";
                 label8.ForeColor = Color.Black;
                 label8.BackColor = Color.Red;
@@ -177,7 +170,13 @@ namespace Dia_3_del_8_CON_LINQ
                 }
             }
 
-
+            txtInscripcion.Text = "";
+            txtNombre.Text = "";
+            txtDireccion.Text = "";
+            txtSS.Text = "";
+            rbHombre.Checked = false;
+            rbMujer.Checked = false;
+            dpfechaNacimiento.Value = date;
         }
 
         private void btSalir_Click(object sender, EventArgs e)
