@@ -1,0 +1,10 @@
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\Dia 3 del 8 CON LINQ\Dia 3 del 8 CON LINQ\bin\Debug\Dia 3 del 8 CON LINQ.exe.config
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\Dia 3 del 8 CON LINQ\Dia 3 del 8 CON LINQ\bin\Debug\Dia 3 del 8 CON LINQ.exe
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\Dia 3 del 8 CON LINQ\Dia 3 del 8 CON LINQ\bin\Debug\Dia 3 del 8 CON LINQ.pdb
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\Dia 3 del 8 CON LINQ\Dia 3 del 8 CON LINQ\obj\Debug\Dia 3 del 8 CON LINQ.csproj.AssemblyReference.cache
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\Dia 3 del 8 CON LINQ\Dia 3 del 8 CON LINQ\obj\Debug\Dia_3_del_8_CON_LINQ.Form1.resources
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\Dia 3 del 8 CON LINQ\Dia 3 del 8 CON LINQ\obj\Debug\Dia_3_del_8_CON_LINQ.Properties.Resources.resources
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\Dia 3 del 8 CON LINQ\Dia 3 del 8 CON LINQ\obj\Debug\Dia 3 del 8 CON LINQ.csproj.GenerateResource.cache
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\Dia 3 del 8 CON LINQ\Dia 3 del 8 CON LINQ\obj\Debug\Dia 3 del 8 CON LINQ.csproj.CoreCompileInputs.cache
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\Dia 3 del 8 CON LINQ\Dia 3 del 8 CON LINQ\obj\Debug\Dia 3 del 8 CON LINQ.exe
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\Dia 3 del 8 CON LINQ\Dia 3 del 8 CON LINQ\obj\Debug\Dia 3 del 8 CON LINQ.pdb
