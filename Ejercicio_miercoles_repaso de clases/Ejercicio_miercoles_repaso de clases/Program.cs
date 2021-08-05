@@ -40,7 +40,7 @@ namespace Ejercicio_miercoles_repaso_de_clases
 
                     case "3":
                         Console.WriteLine("El importe total es de :" + Total);
-                        Console.ReadLine();
+                        Console.ReadKey();
                         Console.Clear();
                         break;
 
@@ -50,6 +50,10 @@ namespace Ejercicio_miercoles_repaso_de_clases
                         Console.WriteLine("Saliendo..");
                         Console.ReadLine();
                         Console.Clear();
+                        break;
+
+                    default:
+                        Console.WriteLine("has introducido la opcion erronea");
                         break;
 
 
