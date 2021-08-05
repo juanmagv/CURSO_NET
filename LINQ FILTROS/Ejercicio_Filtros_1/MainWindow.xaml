@@ -28,11 +28,14 @@
         <CheckBox x:Name="CheckBox5" Content="" HorizontalAlignment="Left" Margin="679,145,0,0" VerticalAlignment="Top" Unchecked="CheckBox5_UnChecked" Checked="CheckBox5_Checked" IsEnabled="False"/>
         <Label Content="Curso" HorizontalAlignment="Left" Margin="26,174,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="ComboBox1" HorizontalAlignment="Left" Margin="81,177,0,0" VerticalAlignment="Top" Width="120">
-            <ComboBoxItem>INGLES</ComboBoxItem>
-            <ComboBoxItem>LENGUA</ComboBoxItem>
-            <ComboBoxItem>RELIGION</ComboBoxItem>
+            <ComboBoxItem IsSelected="true">Programacion Automatas</ComboBoxItem>
+            <ComboBoxItem>Java</ComboBoxItem>
+            <ComboBoxItem>Unity</ComboBoxItem>
+            <ComboBoxItem>Arduino</ComboBoxItem>
+            <ComboBoxItem>Somelier</ComboBoxItem>
         </ComboBox>
-        <Button x:Name="Button1" Content="Aplicar" HorizontalAlignment="Left" Margin="674,177,0,0" VerticalAlignment="Top" Width="75" Click="Button1_Click"/>
+        <Button x:Name="Button2" Content="Aplicar" HorizontalAlignment="Left" Margin="674,177,0,0" VerticalAlignment="Top" Width="75" Click="Button1_Click"/>
         <CheckBox x:Name="CheckBox2" Content="" HorizontalAlignment="Left" Margin="700,81,0,0" VerticalAlignment="Top" Unchecked="CheckBox2_UnChecked" Checked="CheckBox2_Checked"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="553,177,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
     </Grid>
 </Window>

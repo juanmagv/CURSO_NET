@@ -12,7 +12,7 @@ namespace Ejercicio_Filtros.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.8.1.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.10.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -64,6 +64,17 @@ namespace Ejercicio_Filtros.Properties {
         public string FILTROSConnectionString2 {
             get {
                 return ((string)(this["FILTROSConnectionString2"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=ASATA403\\SQLEXPRESSJUANMA;Initial Catalog=filtrosLINQ;Persist Securit" +
+            "y Info=True;User ID=sa;Password=1234")]
+        public string filtrosLINQConnectionString {
+            get {
+                return ((string)(this["filtrosLINQConnectionString"]));
             }
         }
     }

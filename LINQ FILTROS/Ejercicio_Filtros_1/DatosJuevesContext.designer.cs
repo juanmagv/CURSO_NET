@@ -22,60 +22,60 @@ namespace Ejercicio_Filtros
 	using System;
 	
 	
-	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="FILTROS")]
-	public partial class DataClasses1DataContext : System.Data.Linq.DataContext
+	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="filtrosLINQ")]
+	public partial class DatosJuevesContextDataContext : System.Data.Linq.DataContext
 	{
 		
 		private static System.Data.Linq.Mapping.MappingSource mappingSource = new AttributeMappingSource();
 		
     #region Definiciones de métodos de extensibilidad
     partial void OnCreated();
-    partial void InsertDatosViernes(DatosViernes instance);
-    partial void UpdateDatosViernes(DatosViernes instance);
-    partial void DeleteDatosViernes(DatosViernes instance);
+    partial void Insertdatosjueves(datosjueves instance);
+    partial void Updatedatosjueves(datosjueves instance);
+    partial void Deletedatosjueves(datosjueves instance);
     #endregion
 		
-		public DataClasses1DataContext() : 
-				base(global::Ejercicio_Filtros.Properties.Settings.Default.FILTROSConnectionString2, mappingSource)
+		public DatosJuevesContextDataContext() : 
+				base(global::Ejercicio_Filtros.Properties.Settings.Default.filtrosLINQConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public DataClasses1DataContext(string connection) : 
+		public DatosJuevesContextDataContext(string connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public DataClasses1DataContext(System.Data.IDbConnection connection) : 
+		public DatosJuevesContextDataContext(System.Data.IDbConnection connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public DataClasses1DataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+		public DatosJuevesContextDataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public DataClasses1DataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+		public DatosJuevesContextDataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public System.Data.Linq.Table<DatosViernes> DatosViernes
+		public System.Data.Linq.Table<datosjueves> datosjueves
 		{
 			get
 			{
-				return this.GetTable<DatosViernes>();
+				return this.GetTable<datosjueves>();
 			}
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.DatosViernes")]
-	public partial class DatosViernes : INotifyPropertyChanging, INotifyPropertyChanged
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.datosjueves")]
+	public partial class datosjueves : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -84,11 +84,11 @@ namespace Ejercicio_Filtros
 		
 		private string _Nombre;
 		
-		private string _Apellidos;
+		private string _Apellido;
 		
-		private System.DateTime _FechaInscripcion;
+		private System.Nullable<System.DateTime> _Fecha_Ins;
 		
-		private System.DateTime _FechaContratacion;
+		private System.Nullable<System.DateTime> _Fecha_Cont;
 		
 		private string _Curso;
 		
@@ -100,22 +100,22 @@ namespace Ejercicio_Filtros
     partial void OnIdChanged();
     partial void OnNombreChanging(string value);
     partial void OnNombreChanged();
-    partial void OnApellidosChanging(string value);
-    partial void OnApellidosChanged();
-    partial void OnFechaInscripcionChanging(System.DateTime value);
-    partial void OnFechaInscripcionChanged();
-    partial void OnFechaContratacionChanging(System.DateTime value);
-    partial void OnFechaContratacionChanged();
+    partial void OnApellidoChanging(string value);
+    partial void OnApellidoChanged();
+    partial void OnFecha_InsChanging(System.Nullable<System.DateTime> value);
+    partial void OnFecha_InsChanged();
+    partial void OnFecha_ContChanging(System.Nullable<System.DateTime> value);
+    partial void OnFecha_ContChanged();
     partial void OnCursoChanging(string value);
     partial void OnCursoChanged();
     #endregion
 		
-		public DatosViernes()
+		public datosjueves()
 		{
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", DbType="Int NOT NULL", IsPrimaryKey=true)]
 		public int Id
 		{
 			get
@@ -135,7 +135,7 @@ namespace Ejercicio_Filtros
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Nombre", DbType="NVarChar(20) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Nombre", DbType="NVarChar(50)")]
 		public string Nombre
 		{
 			get
@@ -155,62 +155,62 @@ namespace Ejercicio_Filtros
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Apellidos", DbType="NVarChar(20)")]
-		public string Apellidos
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Apellido", DbType="NVarChar(50)")]
+		public string Apellido
 		{
 			get
 			{
-				return this._Apellidos;
+				return this._Apellido;
 			}
 			set
 			{
-				if ((this._Apellidos != value))
+				if ((this._Apellido != value))
 				{
-					this.OnApellidosChanging(value);
+					this.OnApellidoChanging(value);
 					this.SendPropertyChanging();
-					this._Apellidos = value;
-					this.SendPropertyChanged("Apellidos");
-					this.OnApellidosChanged();
+					this._Apellido = value;
+					this.SendPropertyChanged("Apellido");
+					this.OnApellidoChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FechaInscripcion", DbType="Date NOT NULL")]
-		public System.DateTime FechaInscripcion
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Fecha_Ins", DbType="DateTime")]
+		public System.Nullable<System.DateTime> Fecha_Ins
 		{
 			get
 			{
-				return this._FechaInscripcion;
+				return this._Fecha_Ins;
 			}
 			set
 			{
-				if ((this._FechaInscripcion != value))
+				if ((this._Fecha_Ins != value))
 				{
-					this.OnFechaInscripcionChanging(value);
+					this.OnFecha_InsChanging(value);
 					this.SendPropertyChanging();
-					this._FechaInscripcion = value;
-					this.SendPropertyChanged("FechaInscripcion");
-					this.OnFechaInscripcionChanged();
+					this._Fecha_Ins = value;
+					this.SendPropertyChanged("Fecha_Ins");
+					this.OnFecha_InsChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FechaContratacion", DbType="Date NOT NULL")]
-		public System.DateTime FechaContratacion
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Fecha_Cont", DbType="DateTime")]
+		public System.Nullable<System.DateTime> Fecha_Cont
 		{
 			get
 			{
-				return this._FechaContratacion;
+				return this._Fecha_Cont;
 			}
 			set
 			{
-				if ((this._FechaContratacion != value))
+				if ((this._Fecha_Cont != value))
 				{
-					this.OnFechaContratacionChanging(value);
+					this.OnFecha_ContChanging(value);
 					this.SendPropertyChanging();
-					this._FechaContratacion = value;
-					this.SendPropertyChanged("FechaContratacion");
-					this.OnFechaContratacionChanged();
+					this._Fecha_Cont = value;
+					this.SendPropertyChanged("Fecha_Cont");
+					this.OnFecha_ContChanged();
 				}
 			}
 		}
