@@ -190,8 +190,7 @@ f.Apellido.Contains(cadena2)
 
             var listagrid = from f in filtros.datosjueves
                             where f.Curso==curso &&
-                f.Fecha_Ins>= fecha1 && f.Fecha_Ins<=fecha2
-
+                f.Fecha_Ins >= fecha1 && f.Fecha_Ins <= fecha2 
                             select f;
             DGV1.ItemsSource = listagrid;
 
