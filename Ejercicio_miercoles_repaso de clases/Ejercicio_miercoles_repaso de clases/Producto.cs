@@ -45,10 +45,12 @@ namespace Ejercicio_miercoles_repaso_de_clases
             set { categoria = value; }
             get { return categoria; }
         }
-        public void Total()
+    
+        public void imprimir()
         {
-            precio = precio++;
+            Console.WriteLine("Has comprado " + this.Pnombre + " al precio de " + this.Pprecio + " Categoria " + this.categoria);
         }
+     
 
     }
 

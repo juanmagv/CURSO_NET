@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Ejercicio_miercoles_repaso de clases/1.0.0": {
+        "runtime": {
+          "Ejercicio_miercoles_repaso de clases.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Ejercicio_miercoles_repaso de clases/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

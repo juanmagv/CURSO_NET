@@ -1,0 +1,13 @@
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\Ejercicio_miercoles_repaso de clases\Ejercicio_miercoles_repaso de clases\obj\Debug\netcoreapp3.1\Ejercicio_miercoles_repaso de clases.csproj.AssemblyReference.cache
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\Ejercicio_miercoles_repaso de clases\Ejercicio_miercoles_repaso de clases\obj\Debug\netcoreapp3.1\Ejercicio_miercoles_repaso de clases.AssemblyInfoInputs.cache
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\Ejercicio_miercoles_repaso de clases\Ejercicio_miercoles_repaso de clases\obj\Debug\netcoreapp3.1\Ejercicio_miercoles_repaso de clases.AssemblyInfo.cs
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\Ejercicio_miercoles_repaso de clases\Ejercicio_miercoles_repaso de clases\obj\Debug\netcoreapp3.1\Ejercicio_miercoles_repaso de clases.csproj.CoreCompileInputs.cache
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\Ejercicio_miercoles_repaso de clases\Ejercicio_miercoles_repaso de clases\bin\Debug\netcoreapp3.1\Ejercicio_miercoles_repaso de clases.exe
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\Ejercicio_miercoles_repaso de clases\Ejercicio_miercoles_repaso de clases\bin\Debug\netcoreapp3.1\Ejercicio_miercoles_repaso de clases.deps.json
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\Ejercicio_miercoles_repaso de clases\Ejercicio_miercoles_repaso de clases\bin\Debug\netcoreapp3.1\Ejercicio_miercoles_repaso de clases.runtimeconfig.json
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\Ejercicio_miercoles_repaso de clases\Ejercicio_miercoles_repaso de clases\bin\Debug\netcoreapp3.1\Ejercicio_miercoles_repaso de clases.runtimeconfig.dev.json
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\Ejercicio_miercoles_repaso de clases\Ejercicio_miercoles_repaso de clases\bin\Debug\netcoreapp3.1\Ejercicio_miercoles_repaso de clases.dll
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\Ejercicio_miercoles_repaso de clases\Ejercicio_miercoles_repaso de clases\bin\Debug\netcoreapp3.1\Ejercicio_miercoles_repaso de clases.pdb
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\Ejercicio_miercoles_repaso de clases\Ejercicio_miercoles_repaso de clases\obj\Debug\netcoreapp3.1\Ejercicio_miercoles_repaso de clases.dll
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\Ejercicio_miercoles_repaso de clases\Ejercicio_miercoles_repaso de clases\obj\Debug\netcoreapp3.1\Ejercicio_miercoles_repaso de clases.pdb
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\Ejercicio_miercoles_repaso de clases\Ejercicio_miercoles_repaso de clases\obj\Debug\netcoreapp3.1\Ejercicio_miercoles_repaso de clases.genruntimeconfig.cache
