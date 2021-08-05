@@ -36,6 +36,6 @@
         </ComboBox>
         <Button x:Name="Button2" Content="Aplicar" HorizontalAlignment="Left" Margin="674,177,0,0" VerticalAlignment="Top" Width="75" Click="Button1_Click"/>
         <CheckBox x:Name="CheckBox2" Content="" HorizontalAlignment="Left" Margin="700,81,0,0" VerticalAlignment="Top" Unchecked="CheckBox2_UnChecked" Checked="CheckBox2_Checked"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="553,177,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button x:Name="Btn_Buscar" Content="Buscar por fecha" HorizontalAlignment="Left" Margin="512,177,0,0" VerticalAlignment="Top" Width="120" Click="Btn_Buscar_Click"/>
     </Grid>
 </Window>

@@ -176,14 +176,6 @@ namespace Ejercicio_Filtros {
         #line default
         #line hidden
         
-        
-        #line 39 "..\..\MainWindow.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button Btn_Buscar;
-        
-        #line default
-        #line hidden
-        
         private bool _contentLoaded;
         
         /// <summary>
@@ -332,7 +324,12 @@ namespace Ejercicio_Filtros {
             #line hidden
             return;
             case 18:
-            this.Btn_Buscar = ((System.Windows.Controls.Button)(target));
+            
+            #line 39 "..\..\MainWindow.xaml"
+            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.Button_Click);
+            
+            #line default
+            #line hidden
             return;
             }
             this._contentLoaded = true;

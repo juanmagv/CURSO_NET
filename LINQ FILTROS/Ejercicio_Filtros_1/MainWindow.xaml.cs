@@ -186,21 +186,21 @@ f.Apellido.Contains(cadena2)
         void cargarfechas(DateTime fecha1 , DateTime fecha2 )
         {
 
-            //fecha1 = DatePicker1.DisplayDate;
-            //fecha2 = DatePicker2.DisplayDate;
+            string curso = ComboBox1.Text;
 
             var listagrid = from f in filtros.datosjueves
-                            where
-                f.Fecha_Ins> fecha1 && f.Fecha_Ins<fecha2
+                            where f.Curso==curso &&
+                f.Fecha_Ins>= fecha1 && f.Fecha_Ins<=fecha2
 
                             select f;
             DGV1.ItemsSource = listagrid;
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Btn_Buscar_Click(object sender, RoutedEventArgs e)
         {
-            cargarfechas(DatePicker1.DisplayDate, DatePicker2.DisplayDate);
+            if (CheckBox1.IsChecked == true && CheckBox2.IsChecked == true)
+                cargarfechas(DatePicker1.DisplayDate, DatePicker2.DisplayDate);
         }
     }
 }
