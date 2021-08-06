@@ -200,6 +200,39 @@ f.Apellido.Contains(cadena2)
         {
             if (CheckBox1.IsChecked == true && CheckBox2.IsChecked == true)
                 cargarfechas(DatePicker1.DisplayDate, DatePicker2.DisplayDate);
+            else if (CheckBox4.IsChecked == true && CheckBox5.IsChecked == true)
+                cargarfechaContratacion(DatePicker3.DisplayDate, DatePicker4.DisplayDate);
+            else if (CheckBox1.IsChecked == true && CheckBox2.IsChecked == true && CheckBox4.IsChecked == true
+                && CheckBox5.IsChecked == true)
+                cargaporlosdos(DatePicker1.DisplayDate, DatePicker2.DisplayDate,DatePicker3.DisplayDate,DatePicker4.DisplayDate);
+
+
+
+        }
+
+        void cargarfechaContratacion(DateTime fechaCon1,DateTime fechaCon2)
+        {       
+         
+            var listagrid = from f in filtros.datosjueves
+                            where 
+                            f.Fecha_Cont >= fechaCon1 && f.Fecha_Cont <= fechaCon2
+                            select f;
+                             DGV1.ItemsSource = listagrid;
+
+
+
+        }
+
+        void cargaporlosdos(DateTime fechains1,DateTime fechains2,DateTime fechacon1, DateTime fechacon2)
+        {
+         
+            var listagrid = from f in filtros.datosjueves
+                            where
+                            f.Fecha_Cont >= fechacon1 && f.Fecha_Cont <= fechacon1 &&
+                            f.Fecha_Ins >= fechains1 && f.Fecha_Ins <= fechains2
+                            select f;
+                            DGV1.ItemsSource = listagrid;
+
         }
     }
 }
