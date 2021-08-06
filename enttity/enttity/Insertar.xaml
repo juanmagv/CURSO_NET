@@ -1,0 +1,27 @@
+﻿<Window x:Class="enttity.Insertar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:enttity"
+        mc:Ignorable="d"
+        Title="Insertar" Height="242.662" Width="214.846">
+    <Grid Margin="0,0,15,0">
+        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Height="23" Margin="96,50,0,0"
+                 Text="" VerticalAlignment="Top" Width="75"/>
+        <ComboBox x:Name="cmbEsp" HorizontalAlignment="Left" Margin="96,89,0,0" 
+                  VerticalAlignment="Top" Width="75" Height="22">
+
+            <ComboBoxItem>Mates</ComboBoxItem>
+            <ComboBoxItem>Religion</ComboBoxItem>
+            <ComboBoxItem>Susu Labores</ComboBoxItem>
+
+        </ComboBox>
+
+        <Button Content="Insertar" HorizontalAlignment="Left" Margin="96,127,0,0" VerticalAlignment="Top" Width="75" Height="19" Click="Button_Click"/>
+        <Label Content="Nombre" HorizontalAlignment="Left" Margin="10,47,0,0" VerticalAlignment="Top" Width="81" Height="26"/>
+        <Label Content="Especialidad" HorizontalAlignment="Left" Margin="10,89,0,0" VerticalAlignment="Top" Width="74" Height="26"/>
+        <TextBox x:Name="txtId" HorizontalAlignment="Left" Height="23" Margin="96,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="75"/>
+        <Label Content="Id" HorizontalAlignment="Left" Margin="21,10,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
