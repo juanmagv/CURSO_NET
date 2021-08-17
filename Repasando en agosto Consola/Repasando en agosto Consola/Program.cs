@@ -51,6 +51,17 @@ namespace Repasando_en_agosto_Consola
                     emp.Pdocumento = Console.ReadLine();
                     Console.WriteLine("Introduce el tipo");
                     emp.Ptipo = Console.ReadLine();
+                    Console.WriteLine("Introduce el tipo de contrato ");
+                    emp.PtipoContrato = Console.ReadLine();
+                    Console.WriteLine("introduce el sueldo");
+                    emp.Psueldo = double.Parse(Console.ReadLine());
+                    emp.calcularSueldo(emp.Psueldo);
+                    Console.Clear();
+
+                    Console.WriteLine("Nombre :" + emp.Pnombre + "\n" + "Apellido: " + emp.Papellido + "\n" +
+                   "Documento: " + emp.Pdocumento + "\n" + "Tipo: " + emp.Ptipo + "\n" + "Tipo Contrato: " +
+                   emp.PtipoContrato + "\n" + "Codigo: " + cli.Pcodigo);
+                    Console.ReadKey();
                 }
             }
            

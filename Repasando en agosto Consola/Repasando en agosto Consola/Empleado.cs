@@ -23,7 +23,7 @@ namespace Repasando_en_agosto_Consola
             get { return sueldo; }
         }
 
-        public void crearSueldo(double sueldoBase)
+        public void calcularSueldo(double sueldoBase)
         {
             if (this.PtipoContrato == "F")
             {
