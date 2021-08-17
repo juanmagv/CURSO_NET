@@ -25,15 +25,21 @@ namespace Repasando_en_agosto_Consola
 
         public void calcularSueldo(double sueldoBase)
         {
-            if (this.PtipoContrato == "F")
-            {
-                this.Psueldo = Psueldo + 300;
-              
-            }
-            else
-            {
-                this.Psueldo = Psueldo + 250;
-            }
+           
+
+                if (this.PtipoContrato == "F" || this.PtipoContrato == "f")
+                {
+                    this.Psueldo = Psueldo + 300;
+
+                }
+                else
+                {
+                    this.Psueldo = Psueldo + 250;
+                }
+
+            
+            
+            
         }
 
 

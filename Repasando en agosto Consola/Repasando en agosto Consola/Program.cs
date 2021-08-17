@@ -13,57 +13,89 @@ namespace Repasando_en_agosto_Consola
            
         {
             int seleccion;
-            Console.WriteLine("1 para cliente , 2 para empleado");
-            seleccion=Int32.Parse( Console.ReadLine());
+            Console.WriteLine("1 para cliente , 2 para empleado, 3 salir");
+        
+                seleccion = Int32.Parse(Console.ReadLine());
 
-            if (seleccion == 1)
-            {
-                Cliente cli = new Cliente();
-                Console.WriteLine("Introduce el nombre");
-                cli.Pnombre = Console.ReadLine();
-                Console.WriteLine("Introduce el apellido");
-                cli.Papellido = Console.ReadLine();
-                Console.WriteLine("Introduce el documento");
-                cli.Pdocumento = Console.ReadLine();
-                Console.WriteLine("Introduce el tipo");
-                cli.Ptipo = Console.ReadLine();
-                Console.WriteLine("introduce la categoria");
-                cli.Pcategoria = Console.ReadLine();
-                cli.generarCodigo(cli.Pnombre);
-                Console.Clear();
-
-                Console.WriteLine("Nombre :" + cli.Pnombre + "\n" + "Apellido: " + cli.Papellido + "\n" +
-                    "Documento: " + cli.Pdocumento + "\n" + "Tipo: " + cli.Ptipo + "\n" + "Categoria: " +
-                    cli.Pcategoria + "\n" + "Codigo: " + cli.Pcodigo);
-                Console.ReadKey();
-            }
-            else
-            {
-                if (seleccion == 2)
+                switch (seleccion)
                 {
-                    Empleado emp = new Empleado();
-                    
-                    Console.WriteLine("Introduce el nombre");
-                    emp.Pnombre = Console.ReadLine();
-                    Console.WriteLine("Introduce el apellido");
-                    emp.Papellido = Console.ReadLine();
-                    Console.WriteLine("Introduce el documento");
-                    emp.Pdocumento = Console.ReadLine();
-                    Console.WriteLine("Introduce el tipo");
-                    emp.Ptipo = Console.ReadLine();
-                    Console.WriteLine("Introduce el tipo de contrato ");
-                    emp.PtipoContrato = Console.ReadLine();
-                    Console.WriteLine("introduce el sueldo");
-                    emp.Psueldo = double.Parse(Console.ReadLine());
-                    emp.calcularSueldo(emp.Psueldo);
-                    Console.Clear();
+                    case 1:
+                        Cliente cli = new Cliente();
+                        Console.WriteLine("Introduce el nombre");
+                        cli.Pnombre = Console.ReadLine();
+                        Console.WriteLine("Introduce el apellido");
+                        cli.Papellido = Console.ReadLine();
+                        Console.WriteLine("Introduce el documento");
+                        cli.Pdocumento = Console.ReadLine();
+                        Console.WriteLine("Introduce el tipo");
+                        cli.Ptipo = Console.ReadLine();
+                        Console.WriteLine("introduce la categoria");
+                        cli.Pcategoria = Console.ReadLine();
+                        cli.generarCodigo(cli.Pnombre);
+                        Console.Clear();
 
-                    Console.WriteLine("Nombre :" + emp.Pnombre + "\n" + "Apellido: " + emp.Papellido + "\n" +
-                   "Documento: " + emp.Pdocumento + "\n" + "Tipo: " + emp.Ptipo + "\n" + "Tipo Contrato: " +
-                   emp.PtipoContrato + "\n" + "Codigo: " + cli.Pcodigo);
-                    Console.ReadKey();
+                        Console.WriteLine("Nombre :" + cli.Pnombre + "\n" + "Apellido: " + cli.Papellido + "\n" +
+                            "Documento: " + cli.Pdocumento + "\n" + "Tipo: " + cli.Ptipo + "\n" + "Categoria: " +
+                            cli.Pcategoria + "\n" + "Codigo: " + cli.Pcodigo);
+                        Console.ReadKey();
+                        break;
+
+
+                    case 2:
+
+                        Empleado emp = new Empleado();
+
+                        Console.WriteLine("Introduce el nombre");
+                        emp.Pnombre = Console.ReadLine();
+                        Console.WriteLine("Introduce el apellido");
+                        emp.Papellido = Console.ReadLine();
+                        Console.WriteLine("Introduce el documento");
+                        emp.Pdocumento = Console.ReadLine();
+                        Console.WriteLine("Introduce el tipo");
+                        emp.Ptipo = Console.ReadLine();
+                        do
+                        {
+                            Console.WriteLine("Introduce el tipo de contrato F o T");
+                            emp.PtipoContrato = Console.ReadLine();
+                        } while (emp.PtipoContrato != "F" && emp.PtipoContrato != "f" && emp.PtipoContrato != "T"
+                        && emp.PtipoContrato != "t");
+
+                        try
+                        {
+
+                            Console.WriteLine("introduce el sueldo");
+                            emp.Psueldo = double.Parse(Console.ReadLine());
+
+                        }
+                        catch
+                        {
+                            Console.WriteLine("El valor introducido no es un numero");
+                        }
+
+
+
+                        emp.calcularSueldo(emp.Psueldo);
+                        Console.Clear();
+
+                        Console.WriteLine("Nombre :" + emp.Pnombre + "\n" + "Apellido: " + emp.Papellido + "\n" +
+                       "Documento: " + emp.Pdocumento + "\n" + "Tipo: " + emp.Ptipo + "\n" + "Tipo Contrato: " +
+                       emp.PtipoContrato + "\n" + "Sueldo: " + emp.Psueldo);
+                        Console.ReadKey();
+                        break;
+
+                    case 3:
+                        Console.WriteLine("Saliendo");
+                        break;
+
+
                 }
-            }
+
+
+
+
+
+          
+            
            
 
             
