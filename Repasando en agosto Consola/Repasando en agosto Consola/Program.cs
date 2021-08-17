@@ -12,14 +12,20 @@ namespace Repasando_en_agosto_Consola
 
            
         {
-            int seleccion;
-            Console.WriteLine("1 para cliente , 2 para empleado, 3 salir");
-        
-                seleccion = Int32.Parse(Console.ReadLine());
+            string seleccion;
+          
+            do
+            {
+                Console.Clear();
+                Console.WriteLine("1 para cliente , 2 para empleado, 3 salir");
+                    seleccion =Console.ReadLine();
+
+               
+                
 
                 switch (seleccion)
                 {
-                    case 1:
+                    case"1":
                         Cliente cli = new Cliente();
                         Console.WriteLine("Introduce el nombre");
                         cli.Pnombre = Console.ReadLine();
@@ -41,7 +47,7 @@ namespace Repasando_en_agosto_Consola
                         break;
 
 
-                    case 2:
+                    case "2":
 
                         Empleado emp = new Empleado();
 
@@ -83,12 +89,16 @@ namespace Repasando_en_agosto_Consola
                         Console.ReadKey();
                         break;
 
-                    case 3:
+                    case "3":
                         Console.WriteLine("Saliendo");
                         break;
 
 
                 }
+
+
+            } while (seleccion !="3");
+               
 
 
 
