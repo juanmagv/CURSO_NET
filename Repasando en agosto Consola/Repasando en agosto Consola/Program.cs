@@ -37,13 +37,10 @@ namespace Repasando_en_agosto_Consola
                         cli.Ptipo = Console.ReadLine();
                         Console.WriteLine("introduce la categoria");
                         cli.Pcategoria = Console.ReadLine();
-                        cli.generarCodigo(cli.Pnombre);
+                        cli.generarCodigo();
                         Console.Clear();
-
-                        Console.WriteLine("Nombre :" + cli.Pnombre + "\n" + "Apellido: " + cli.Papellido + "\n" +
-                            "Documento: " + cli.Pdocumento + "\n" + "Tipo: " + cli.Ptipo + "\n" + "Categoria: " +
-                            cli.Pcategoria + "\n" + "Codigo: " + cli.Pcodigo);
-                        Console.ReadKey();
+                        cli.imprimir();
+                     
                         break;
 
 
@@ -98,20 +95,6 @@ namespace Repasando_en_agosto_Consola
 
 
             } while (seleccion !="3");
-               
-
-
-
-
-
-          
-            
-           
-
-            
-
-
-
 
         }
     }
