@@ -180,6 +180,7 @@ namespace EXAMEN_AGOSTO
             this.btBuscar.TabIndex = 14;
             this.btBuscar.Text = "BUSCAR";
             this.btBuscar.UseVisualStyleBackColor = true;
+            this.btBuscar.Click += new System.EventHandler(this.btBuscar_Click);
             // 
             // btListar
             // 
@@ -198,6 +199,7 @@ namespace EXAMEN_AGOSTO
             this.btagregar.TabIndex = 16;
             this.btagregar.Text = "AGREGAR";
             this.btagregar.UseVisualStyleBackColor = true;
+            this.btagregar.Click += new System.EventHandler(this.btagregar_Click);
             // 
             // btEliminar
             // 
@@ -207,6 +209,7 @@ namespace EXAMEN_AGOSTO
             this.btEliminar.TabIndex = 17;
             this.btEliminar.Text = "ELIMINAR";
             this.btEliminar.UseVisualStyleBackColor = true;
+            this.btEliminar.Click += new System.EventHandler(this.btEliminar_Click);
             // 
             // btModificar
             // 
@@ -216,6 +219,7 @@ namespace EXAMEN_AGOSTO
             this.btModificar.TabIndex = 18;
             this.btModificar.Text = "MODIFICAR";
             this.btModificar.UseVisualStyleBackColor = true;
+            this.btModificar.Click += new System.EventHandler(this.btModificar_Click);
             // 
             // dataGridView1
             // 
@@ -293,6 +297,7 @@ namespace EXAMEN_AGOSTO
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

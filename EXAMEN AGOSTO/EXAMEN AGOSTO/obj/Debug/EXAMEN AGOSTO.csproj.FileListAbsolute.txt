@@ -8,3 +8,8 @@ C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\EXAMEN AGOSTO\EXAMEN AGOSTO\obj\D
 C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\EXAMEN AGOSTO\EXAMEN AGOSTO\obj\Debug\EXAMEN AGOSTO.csproj.CoreCompileInputs.cache
 C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\EXAMEN AGOSTO\EXAMEN AGOSTO\obj\Debug\EXAMEN AGOSTO.exe
 C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\EXAMEN AGOSTO\EXAMEN AGOSTO\obj\Debug\EXAMEN AGOSTO.pdb
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\EXAMEN AGOSTO\EXAMEN AGOSTO\bin\Debug\EntityFramework.dll
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\EXAMEN AGOSTO\EXAMEN AGOSTO\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\EXAMEN AGOSTO\EXAMEN AGOSTO\bin\Debug\EntityFramework.xml
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\EXAMEN AGOSTO\EXAMEN AGOSTO\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\EXAMEN AGOSTO\EXAMEN AGOSTO\obj\Debug\EXAMEN AGOSTO.csproj.CopyComplete
