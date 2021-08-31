@@ -1,0 +1,7 @@
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\viernesORO\viernesORO\obj\Debug\viernesORO.csproj.AssemblyReference.cache
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\viernesORO\viernesORO\obj\Debug\viernesORO.csproj.CoreCompileInputs.cache
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\viernesORO\viernesORO\bin\Debug\viernesORO.exe.config
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\viernesORO\viernesORO\bin\Debug\viernesORO.exe
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\viernesORO\viernesORO\bin\Debug\viernesORO.pdb
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\viernesORO\viernesORO\obj\Debug\viernesORO.exe
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\viernesORO\viernesORO\obj\Debug\viernesORO.pdb

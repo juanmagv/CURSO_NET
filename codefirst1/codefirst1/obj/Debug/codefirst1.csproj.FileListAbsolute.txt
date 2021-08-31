@@ -80,3 +80,5 @@ C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\codefirst1\codefirst1\obj\Debug\c
 C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\codefirst1\codefirst1\obj\Debug\codefirst1.csproj.CopyComplete
 C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\codefirst1\codefirst1\obj\Debug\codefirst1.dll
 C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\codefirst1\codefirst1\obj\Debug\codefirst1.pdb
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\codefirst1\codefirst1\obj\Debug\codefirst1.Migrations.Initial.resources
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\codefirst1\codefirst1\obj\Debug\codefirst1.csproj.GenerateResource.cache
