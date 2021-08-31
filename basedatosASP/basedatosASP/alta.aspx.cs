@@ -18,7 +18,7 @@ namespace basedatosASP
             SqlConnection conexion = new SqlConnection(s);
             conexion.Open();
             SqlCommand comando = new SqlCommand("insert into usuarios(nombre,clave,mail) values('" + this.txtNombre.Text +
-                "','" + txtClave.Text + "','" + txtMail.Text + "')", conexion);
+                "','" + this.txtClave.Text + "','" + this.txtMail.Text + "')", conexion);
             comando.ExecuteNonQuery();
             Label4.Text = "Se registro el usuario";
             conexion.Close();
