@@ -34,10 +34,11 @@ namespace EjercicioValidacion_ASP
             }
             else
             {
+               
                 lbChTerminos.Visible = false;
             }
 
-            if (IsValid) Response.Redirect("accesopermitido.aspx");
+            if ((IsValid) && (CheckBox1.Checked == true)) Response.Redirect("accesopermitido.aspx");
         }
     }
     }

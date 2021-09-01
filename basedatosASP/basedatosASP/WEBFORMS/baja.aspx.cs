@@ -8,19 +8,25 @@ using System.Data;
 using System.Data.SqlClient;
 namespace basedatosASP
 {
-    public partial class alta : System.Web.UI.Page
+    public partial class baja : System.Web.UI.Page
     {
-        
-       
         protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void txtBorrar_Click(object sender, EventArgs e)
         {
             string s = System.Configuration.ConfigurationManager.ConnectionStrings["cadenaconexion1"].ConnectionString.ToString();
             SqlConnection conexion = new SqlConnection(s);
             conexion.Open();
-            SqlCommand comando = new SqlCommand("insert into usuarios(nombre,clave,mail) values('" + this.txtNombre.Text +
-                "','" + this.txtClave.Text + "','" + this.txtMail.Text + "')", conexion);
-            comando.ExecuteNonQuery();
-            Label4.Text = "Se registro el usuario";
+            SqlCommand comando = new SqlCommand("delete from usuarios where nombre='"+
+                this.txtBaja.Text + "'", conexion);
+            int cantidad = comando.ExecuteNonQuery();
+            if (cantidad == 1)
+                this.Label1.Text = "Se borro el usuario";
+            else
+                this.Label1.Text = "No existe un usuario con dicho nombre";
             conexion.Close();
         }
     }

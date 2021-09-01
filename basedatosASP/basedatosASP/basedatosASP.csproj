@@ -67,47 +67,47 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="alta.aspx" />
-    <Content Include="baja.aspx" />
-    <Content Include="consulta.aspx" />
-    <Content Include="Default.aspx" />
-    <Content Include="modificacion.aspx" />
+    <Content Include="WEBFORMS\alta.aspx" />
+    <Content Include="WEBFORMS\baja.aspx" />
+    <Content Include="WEBFORMS\consulta.aspx" />
+    <Content Include="WEBFORMS\Default.aspx" />
+    <Content Include="WEBFORMS\modificacion.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="alta.aspx.cs">
+    <Compile Include="WEBFORMS\alta.aspx.cs">
       <DependentUpon>alta.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="alta.aspx.designer.cs">
+    <Compile Include="WEBFORMS\alta.aspx.designer.cs">
       <DependentUpon>alta.aspx</DependentUpon>
     </Compile>
-    <Compile Include="baja.aspx.cs">
+    <Compile Include="WEBFORMS\baja.aspx.cs">
       <DependentUpon>baja.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="baja.aspx.designer.cs">
+    <Compile Include="WEBFORMS\baja.aspx.designer.cs">
       <DependentUpon>baja.aspx</DependentUpon>
     </Compile>
-    <Compile Include="consulta.aspx.cs">
+    <Compile Include="WEBFORMS\consulta.aspx.cs">
       <DependentUpon>consulta.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="consulta.aspx.designer.cs">
+    <Compile Include="WEBFORMS\consulta.aspx.designer.cs">
       <DependentUpon>consulta.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Default.aspx.cs">
+    <Compile Include="WEBFORMS\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Default.aspx.designer.cs">
+    <Compile Include="WEBFORMS\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="modificacion.aspx.cs">
+    <Compile Include="WEBFORMS\modificacion.aspx.cs">
       <DependentUpon>modificacion.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="modificacion.aspx.designer.cs">
+    <Compile Include="WEBFORMS\modificacion.aspx.designer.cs">
       <DependentUpon>modificacion.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -120,6 +120,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CSS\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
