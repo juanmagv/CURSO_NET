@@ -5,7 +5,7 @@
     <div class="jumbotron">
         <h1>APLICACION DE GESTION QUE LO PETA</h1>
         <p class="lead">SI DESEAS INFORMACION NO LO DUDES GAÑAN LLAMANOS</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Acerca de nosotros &raquo;</a></p>
+        <p><a href="Contact.aspx" class="btn btn-primary btn-lg">Acerca de nosotros &raquo;</a></p>
     </div>
 
     <div class="row">

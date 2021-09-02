@@ -69,8 +69,8 @@ C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\ASP_MASTER_PAGE\ASP_MASTER_PAGE\b
 C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\ASP_MASTER_PAGE\ASP_MASTER_PAGE\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\ASP_MASTER_PAGE\ASP_MASTER_PAGE\bin\es\System.Web.Optimization.resources.dll
 C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\ASP_MASTER_PAGE\ASP_MASTER_PAGE\bin\es\Microsoft.AspNet.FriendlyUrls.resources.dll
-C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\ASP_MASTER_PAGE\ASP_MASTER_PAGE\obj\Debug\ASP_MASTER_PAGE.csproj.AssemblyReference.cache
 C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\ASP_MASTER_PAGE\ASP_MASTER_PAGE\obj\Debug\ASP_MASTER_PAGE.csproj.CoreCompileInputs.cache
 C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\ASP_MASTER_PAGE\ASP_MASTER_PAGE\obj\Debug\ASP_MASTER_PAGE.csproj.CopyComplete
 C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\ASP_MASTER_PAGE\ASP_MASTER_PAGE\obj\Debug\ASP_MASTER_PAGE.dll
 C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\ASP_MASTER_PAGE\ASP_MASTER_PAGE\obj\Debug\ASP_MASTER_PAGE.pdb
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\ASP_MASTER_PAGE\ASP_MASTER_PAGE\obj\Debug\ASP_MASTER_PAGE.csproj.AssemblyReference.cache
