@@ -22,7 +22,7 @@ namespace InyeccionSQL
     public partial class MainWindow : Window
     {
         private SqlConnection conexion = new SqlConnection("server=ASATA403\\SQLEXPRESSJUANMA;initial Catalog=PruebaINyeccionsql;" +
-            "Persist Security info=True;User=sa;PassWord=1234;");
+            "Persist Security info=False;User=sa;PassWord=1234;");
         public MainWindow()
         {
             InitializeComponent();
