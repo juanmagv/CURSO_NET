@@ -24,12 +24,20 @@ namespace Repasando_en_agosto_Consola
             get { return codigo; }
         }
 
-        public void generarCodigo(string  Generacodigo)
+        public void generarCodigo()
            
         {
            this.Pcodigo = "C" + this.Pnombre.Substring(0, 3)+this.Pdocumento.Substring(0,2);
            
 
+        }
+
+        public void imprimir()
+        {
+            Console.WriteLine("Nombre :" + this.Pnombre + "\n" + "Apellido: " + this.Papellido + "\n" +
+                         "Documento: " + this.Pdocumento + "\n" + "Tipo: " + this.Ptipo + "\n" + "Categoria: " +
+                         this.Pcategoria + "\n" + "Codigo: " + this.Pcodigo);
+            Console.ReadKey();
         }
 
     }
