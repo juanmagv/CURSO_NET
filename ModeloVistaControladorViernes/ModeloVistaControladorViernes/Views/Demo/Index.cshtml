@@ -1,10 +1,11 @@
-﻿@model ModeloVistaControladorViernes.Models.Libro
+﻿
+@model IEnumerable<ModeloVistaControladorViernes.Models.Libro>
 
-@{ 
-    Layout = null;
+@{
+    ViewBag.Title = "Index";
 }
 
-@{ 
+@{
     string titulo = "Página principal";
     int dia = DateTime.Now.Day;
     int mes = DateTime.Now.Month;
@@ -24,16 +25,20 @@
 }
 <!DOCTTYPE html>
 <html>
-    <meta name="viewport" content="width=device-width"/>
+<meta name="viewport" content="width=device-width" />
 <title>
     Index
 </title>
 <body>
+
     <div>
-        <h1>@titulo</h1>
-        <p>Fecha:@dia/@mes/@año</p>
-        <p>@cadena</p>
-        El título del libro es <strong>@Model.Titulo</strong>
+        <ul>
+            @foreach (var libro in Model)
+            {
+                <li>@libro.Titulo (@libro.TipoLibro)</li>
+
+            }
+        </ul>
     </div>
 </body>
 </html>
