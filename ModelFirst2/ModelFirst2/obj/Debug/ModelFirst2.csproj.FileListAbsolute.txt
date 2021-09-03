@@ -76,3 +76,7 @@ C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\ModelFirst2\ModelFirst2\obj\Debug
 C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\ModelFirst2\ModelFirst2\obj\Debug\ModelFirst2.csproj.CopyComplete
 C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\ModelFirst2\ModelFirst2\obj\Debug\ModelFirst2.dll
 C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\ModelFirst2\ModelFirst2\obj\Debug\ModelFirst2.pdb
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\ModelFirst2\ModelFirst2\bin\EntityFramework.dll
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\ModelFirst2\ModelFirst2\bin\EntityFramework.SqlServer.dll
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\ModelFirst2\ModelFirst2\bin\EntityFramework.xml
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\ModelFirst2\ModelFirst2\bin\EntityFramework.SqlServer.xml

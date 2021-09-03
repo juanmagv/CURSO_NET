@@ -1,0 +1,41 @@
+﻿@model ModeloVistaControladorViernes.Models.Libro
+
+@{ 
+    Layout = null;
+}
+
+@{ 
+    string titulo = "Página principal";
+    int dia = DateTime.Now.Day;
+    int mes = DateTime.Now.Month;
+    int año = DateTime.Now.Year;
+    string cadena;
+    if (dia > 15)
+    {
+        cadena = "·estamos en la segunda parte del mes";
+
+    }
+    else
+    {
+        cadena = "Estamos en la primera parte del mes";
+    }
+
+
+}
+<!DOCTTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width"/>
+<title>
+    Index
+</title>
+<body>
+    <div>
+        <h1>@titulo</h1>
+        <p>Fecha:@dia/@mes/@año</p>
+        <p>@cadena</p>
+        El título del libro es <strong>@Model.Titulo</strong>
+    </div>
+</body>
+</html>
+
+
