@@ -121,6 +121,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="Controllers\BibliotecaController.cs" />
     <Compile Include="Controllers\DemoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\TablaController.cs" />
@@ -170,6 +171,11 @@
     <Content Include="Views\Demo\Index.cshtml" />
     <Content Include="Views\Index.cshtml" />
     <Content Include="Views\Tabla\Index.cshtml" />
+    <Content Include="Views\Biblioteca\Index.cshtml" />
+    <Content Include="Views\Biblioteca\Create.cshtml" />
+    <Content Include="Views\Biblioteca\Delete.cshtml" />
+    <Content Include="Views\Biblioteca\Edit.cshtml" />
+    <Content Include="Views\Biblioteca\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -79,8 +79,8 @@ C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\ModeloVistaControladorViernes\Mod
 C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\ModeloVistaControladorViernes\ModeloVistaControladorViernes\bin\es\System.Web.WebPages.resources.dll
 C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\ModeloVistaControladorViernes\ModeloVistaControladorViernes\bin\es\System.Web.WebPages.Deployment.resources.dll
 C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\ModeloVistaControladorViernes\ModeloVistaControladorViernes\bin\es\System.Web.WebPages.Razor.resources.dll
-C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\ModeloVistaControladorViernes\ModeloVistaControladorViernes\obj\Debug\ModeloVistaControladorViernes.csproj.AssemblyReference.cache
 C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\ModeloVistaControladorViernes\ModeloVistaControladorViernes\obj\Debug\ModeloVistaControladorViernes.csproj.CoreCompileInputs.cache
 C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\ModeloVistaControladorViernes\ModeloVistaControladorViernes\obj\Debug\ModeloVistaControladorViernes.csproj.CopyComplete
 C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\ModeloVistaControladorViernes\ModeloVistaControladorViernes\obj\Debug\ModeloVistaControladorViernes.dll
 C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\ModeloVistaControladorViernes\ModeloVistaControladorViernes\obj\Debug\ModeloVistaControladorViernes.pdb
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\ModeloVistaControladorViernes\ModeloVistaControladorViernes\obj\Debug\ModeloVistaControladorViernes.csproj.AssemblyReference.cache
