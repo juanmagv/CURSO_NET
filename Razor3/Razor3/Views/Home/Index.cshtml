@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+
+<h2>Index</h2>
+<!Doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <tittle>Index</tittle>
+</head>
+<body>
+    <h1>Ejercicios varios</h1>
+    <div>
+        @Html.ActionLink("Calcular Edad", "CalcularEdad")
+        <br />
+        @Html.ActionLink("Calculadora", "Calculadora")
+        <br />
+        @Html.ActionLink("Conversiones", "Conversion")
+        <br />
+        @Html.ActionLink("Descuento de Compras", "DescuentoCompra")
+        <br />
+        @Html.ActionLink("Estadísticas de Asignatura", "Estadisticas")
+    </div>
+</body>
+</html>

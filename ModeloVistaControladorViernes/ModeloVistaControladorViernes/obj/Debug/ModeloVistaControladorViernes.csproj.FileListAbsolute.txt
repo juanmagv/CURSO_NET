@@ -83,4 +83,3 @@ C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\ModeloVistaControladorViernes\Mod
 C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\ModeloVistaControladorViernes\ModeloVistaControladorViernes\obj\Debug\ModeloVistaControladorViernes.csproj.CopyComplete
 C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\ModeloVistaControladorViernes\ModeloVistaControladorViernes\obj\Debug\ModeloVistaControladorViernes.dll
 C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\ModeloVistaControladorViernes\ModeloVistaControladorViernes\obj\Debug\ModeloVistaControladorViernes.pdb
-C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\ModeloVistaControladorViernes\ModeloVistaControladorViernes\obj\Debug\ModeloVistaControladorViernes.csproj.AssemblyReference.cache

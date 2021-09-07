@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Conversion";
+}
+
+<h2>Conversion</h2>
+
+<!Doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <tittle>CalcularEdad</tittle>
+</head>
+<body>
+    <div>
+        <div>
+            <form method="post">
+                <h3>CELSIUS A FARENHEIT</h3>
+                <div>CELSIUS:<input type="text" name="txtcel" value="@ViewBag.cel" /></div>
+                <div><input type="submit" value="calcular1" /></div>
+                <div>FARENHEIT:<input type="text" name="txtFa" value="@ViewBag.tem" /></div>
+                <h3>PULGADAS A MILIMETRO</h3>
+                <div>PULGADAS:<input type="text" name="txtpul" value="@ViewBag.pul" /></div>
+                <div><input type="submit" value="calcular2" /></div>
+                <div>MILIMETROS:<input type="text" name="txtFa" value="@ViewBag.med" /></div>
+            </form>
+        </div>
+        @Html.ActionLink("Volver al menu principal", "Index")
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "DescuentoCompra";
+}
+
+<h2>DescuentoCompra</h2>
+<!Doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <tittle>CalcularEdad</tittle>
+</head>
+<body>
+    <div>
+        <div>
+            <form method="post">
+                <div>TARIFA PRODUCTO:<input type="text" name="tarifa" value="@ViewBag.tar" /></div>
+                <div>TOTAL PAGADO:<input type="text" name="total" value="@ViewBag.tot" /></div>
+                <div><input type="submit" value="calcular" /></div>
+                <div>EL PORCENTAJE DESCONTADO ES:<input type="text" name="txttar" value="@ViewBag.des" />%</div>
+            </form>
+        </div>
+        @Html.ActionLink("Volver al menu principal", "Index")
+    </div>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "CalcularEdad";
+}
+
+<h2>CalcularEdad</h2>
+<!Doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <tittle>CalcularEdad</tittle>
+</head>
+<body><div>
+    <div>
+        <form method="post">
+            .
+            Nombre:<input type="text" name="txtn" value="@ViewBag.n" />
+            Año de nacimiento:
+            <input type="text" name="txtan" value="@ViewBag.an" />
+            <h2>Año actual: @DateTime.Now.Year</h2>
+            Edad:
+            <input type="text" name="txte" value="@ViewBag.e"
+                   readonly="readonly" />
+            <input type="submit" value="calcular" />
+        </form>
+    </div>
+    @Html.ActionLink("Volver al menu principal", "Index")
+</div></body></html>
