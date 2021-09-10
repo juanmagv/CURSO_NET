@@ -86,15 +86,15 @@ namespace Razor3.Controllers
         [HttpPost]
         public ActionResult Estadisticas(int suspensos,int aprobados,int notables,int sobresalientes)
         {
-            int sus = suspensos;
+            int  sus = suspensos;
             int ap = aprobados;
             int not = notables;
             int sob = sobresalientes;
-            int total = (suspensos + aprobados);
+            int total = (sus + ap);
             ViewBag.sup = sus/total;
-            ViewBag.apro = (aprobados / total) * 100;
-            ViewBag.not = (notables / total) * 100;
-            ViewBag.sob = (sobresalientes / total) * 100;
+            ViewBag.apro = (ap / total) * 100;
+            ViewBag.not = (not / total) * 100;
+            ViewBag.sob = (sob / total) * 100;
             return View();
 
         }
